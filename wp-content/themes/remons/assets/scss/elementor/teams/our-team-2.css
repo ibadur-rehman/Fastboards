@@ -1,0 +1,710 @@
+.ova-our-team-2.template1 {
+  overflow: hidden;
+}
+.ova-our-team-2.template1 .item {
+  display: flex;
+  align-items: center;
+  background: #020D2B;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 50px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-our-team-2.template1 .item .image {
+  aspect-ratio: 1/1;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+.ova-our-team-2.template1 .item .image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ova-our-team-2.template1 .item .info {
+  position: relative;
+  flex-grow: 1;
+}
+.ova-our-team-2.template1 .item .info .name {
+  margin: 0 0 5px 0;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-our-team-2.template1 .item .info .job {
+  margin: 0 0 60px 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+}
+.ova-our-team-2.template1 .item .share-wrapper {
+  position: relative;
+}
+.ova-our-team-2.template1 .item .share-wrapper .read-more {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 0;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-our-team-2.template1 .item .share-wrapper .read-more:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+.ova-our-team-2.template1 .item .share-wrapper .read-more .icon {
+  display: flex;
+  align-items: center;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 214px;
+  pointer-events: none;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .share-button {
+  background-color: #2e3650;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  margin-top: 10px;
+  pointer-events: initial;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .share-button i {
+  color: #fff;
+  display: flex;
+  font-size: 10px;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .share-button svg {
+  fill: #fff;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #ecf0f4;
+  border-radius: 50%;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon:hover {
+  transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon:hover i {
+  color: #fff;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon:hover svg {
+  fill: #fff;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon i {
+  display: inline-flex;
+  font-size: 14px;
+  color: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon .icon svg {
+  display: inline-flex;
+  width: 14px;
+  fill: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper:hover {
+  pointer-events: initial;
+}
+.ova-our-team-2.template1 .item .share-wrapper .icon-wrapper:hover .social-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ova-our-team-2.template1 .item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.ova-our-team-2.template1 .item:hover .read-more {
+  background-color: var(--primary);
+  color: #fff;
+}
+@media (max-width: 1135px) {
+  .ova-our-team-2.template1 .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  .ova-our-team-2.template1 .item .image {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .ova-our-team-2.template1 .item .info {
+    margin-bottom: 0;
+  }
+  .ova-our-team-2.template1 .item .info .job {
+    margin-bottom: 10px;
+  }
+  .ova-our-team-2.template1 .item .share-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .ova-our-team-2.template1 .item .share-wrapper .read-more {
+    margin-left: 10px;
+  }
+  .ova-our-team-2.template1 .item .share-wrapper .icon-wrapper {
+    position: unset;
+    pointer-events: initial;
+    margin-bottom: 20px;
+  }
+  .ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .share-button {
+    display: none;
+  }
+  .ova-our-team-2.template1 .item .share-wrapper .icon-wrapper .social-icon {
+    opacity: 1;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+  }
+}
+.ova-our-team-2.template2 .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  position: relative;
+  padding: 0 15px 40px;
+  background-color: #fff;
+}
+.ova-our-team-2.template2 .item .image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  margin: -70px 0 0 0;
+}
+.ova-our-team-2.template2 .item .image img {
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper {
+  position: absolute;
+  left: calc(50% - 21px);
+  bottom: -18px;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  pointer-events: none;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .share-button {
+  background-color: var(--secondary);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  pointer-events: initial;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .share-button i {
+  color: #fff;
+  display: flex;
+  font-size: 10px;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .share-button svg {
+  fill: #fff;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -10px);
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  bottom: -15px;
+  position: absolute;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #ecf0f4;
+  border-radius: 50%;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon:hover {
+  transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon:hover i {
+  color: #fff;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon:hover svg {
+  fill: #fff;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon i {
+  display: inline-flex;
+  font-size: 14px;
+  color: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper .social-icon .icon svg {
+  display: inline-flex;
+  width: 14px;
+  fill: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper:hover {
+  pointer-events: initial;
+}
+.ova-our-team-2.template2 .item .image .share-wrapper .icon-wrapper:hover .social-icon {
+  transform: translate(-50%, -51px);
+  left: 50%;
+  opacity: 1;
+  pointer-events: initial;
+}
+.ova-our-team-2.template2 .item .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ova-our-team-2.template2 .item .info .name {
+  color: var(--heading);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  margin: 45px 0 0 0;
+}
+.ova-our-team-2.template2 .item .info .job {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+}
+.ova-our-team-2.template2 .item .info .read-more {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 30px;
+  border-radius: 14px;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 0;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #E6E7EA;
+}
+.ova-our-team-2.template2 .item .info .read-more:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.ova-our-team-2.template2 .item .info .read-more .icon {
+  display: flex;
+  align-items: center;
+}
+.ova-our-team-2.template3 {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #E6E7EA;
+  box-shadow: 10px 4px 60px rgba(193, 193, 193, 0.25);
+}
+.ova-our-team-2.template3 .item {
+  padding: 40px 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ova-our-team-2.template3 .item .info-image {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ova-our-team-2.template3 .item .info-image .info {
+  text-align: center;
+}
+.ova-our-team-2.template3 .item .info-image .info .name {
+  color: var(--heading);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  margin: 0;
+}
+.ova-our-team-2.template3 .item .info-image .info .job {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 35px 0;
+}
+.ova-our-team-2.template3 .item .info-image .image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 180px;
+  overflow: hidden;
+}
+.ova-our-team-2.template3 .item .info-image .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ova-our-team-2.template3 .item .share-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  padding-top: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+.ova-our-team-2.template3 .item .share-wrapper .read-more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  color: var(--heading);
+  background-color: unset !important;
+  line-height: 16px;
+}
+.ova-our-team-2.template3 .item .share-wrapper .read-more .text-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  font-style: normal;
+}
+.ova-our-team-2.template3 .item .share-wrapper .read-more .text-button:hover {
+  text-decoration: underline;
+}
+.ova-our-team-2.template3 .item .share-wrapper .read-more .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .share-button {
+  display: none;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  list-style: none;
+  display: inline-flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #ecf0f4;
+  border-radius: 50%;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon:hover {
+  transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon:hover i {
+  color: #fff;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon:hover svg {
+  fill: #fff;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon i {
+  display: inline-flex;
+  font-size: 14px;
+  color: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template3 .item .share-wrapper .icon-wrapper .social-icon .icon svg {
+  display: inline-flex;
+  width: 14px;
+  fill: var(--heading);
+  line-height: 1;
+}
+@media (max-width: 380px) {
+  .ova-our-team-2.template3 .item .share-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.ova-our-team-2.template4 {
+  overflow: hidden;
+  border-radius: 14px;
+}
+.ova-our-team-2.template4:hover .item .image .read-more {
+  opacity: 1;
+}
+.ova-our-team-2.template4 .item {
+  display: flex;
+  flex-direction: column;
+}
+.ova-our-team-2.template4 .item .image {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.ova-our-team-2.template4 .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.ova-our-team-2.template4 .item .image .read-more {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  gap: 10px;
+  line-height: 0;
+  color: #fff;
+  padding: 15px 0;
+  margin: 0 55px;
+  background-color: var(--primary);
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  opacity: 0;
+}
+.ova-our-team-2.template4 .item .image .read-more .icon {
+  display: flex;
+  align-items: center;
+}
+.ova-our-team-2.template4 .item .info {
+  position: relative;
+}
+.ova-our-team-2.template4 .item .info .name {
+  color: var(--heading);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  margin: 25px 0 0 0;
+}
+.ova-our-team-2.template4 .item .info .job {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.ova-our-team-2.template4 .item .share-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 17px;
+  pointer-events: none;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .share-button {
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #E6E7EA;
+  z-index: 1;
+  pointer-events: initial;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .share-button i {
+  color: #747A8B;
+  display: flex;
+  font-size: 10px;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .share-button svg {
+  fill: #747A8B;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-90px);
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #ecf0f4;
+  border-radius: 50%;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon:hover {
+  transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon:hover i {
+  color: #fff;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon:hover svg {
+  fill: #fff;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon i {
+  display: inline-flex;
+  font-size: 14px;
+  color: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper .social-icon .icon svg {
+  display: inline-flex;
+  width: 14px;
+  fill: var(--heading);
+  line-height: 1;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper:hover .share-button {
+  background-color: var(--secondary);
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper:hover .share-button i {
+  color: #fff;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper:hover {
+  pointer-events: initial;
+}
+.ova-our-team-2.template4 .item .share-wrapper .icon-wrapper:hover .social-icon {
+  transform: translateY(-132px);
+  opacity: 1;
+  pointer-events: initial;
+}

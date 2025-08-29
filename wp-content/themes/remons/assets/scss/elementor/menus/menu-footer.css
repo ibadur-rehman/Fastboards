@@ -1,0 +1,33 @@
+.ova-menu-footer .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ova-menu-footer .menu li:not(:last-child) {
+  margin-bottom: 7px;
+}
+.ova-menu-footer .menu li.current-menu-item > a, .ova-menu-footer .menu li.current-menu-parent > a {
+  color: var(--primary);
+}
+.ova-menu-footer .menu a {
+  transition: all 0.3s ease;
+  position: relative;
+  color: #8e94a5;
+  text-decoration: none;
+}
+.ova-menu-footer .menu a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  left: 0px;
+  bottom: 0px;
+  transition: all 500ms ease;
+  background-color: var(--primary);
+}
+.ova-menu-footer .menu a:hover:before {
+  width: 100%;
+}
+.ova-menu-footer .menu .sub-menu {
+  list-style: none;
+}

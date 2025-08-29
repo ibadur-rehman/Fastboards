@@ -1,0 +1,174 @@
+.woocommerce{
+
+	#woo_main{
+		padding: 0 10px;
+		margin: 0 auto 70px auto;
+
+		.content-area{
+			@media(max-width: $desktop -1 ){
+				flex: 0 0 100%;
+				width: 100%;
+			}
+
+			// Show Result 
+			.woocommerce-result-count{
+				margin: 6px 0 0 0;
+				font-size: 18px;
+				@media (max-width: 580px) {
+					margin-bottom: 6px;
+				}
+			}
+
+			// Sorting
+			.woocommerce-ordering{
+				width: 245px;
+				margin-bottom: 40px;
+				select {
+					font-weight: 300;
+					option {
+						font-weight: 300;
+					}
+				}
+			}
+
+
+			// Listing
+			ul.products{
+				&[class*=columns-] {
+					li.product {
+		                @media (max-width: 580px) {
+							width: 100%;
+							float: none;
+						}
+					}
+				}
+
+				li.product{
+					text-align: center;
+					position: relative;
+					overflow: hidden;
+					margin-bottom: 0;
+					padding-bottom: 30px;
+
+					&.product-type-ovabrw_car_rental {
+						text-align: initial;
+					}
+
+					@media (max-width: 580px) {
+						width: 100%;
+						float: none;
+					}
+					.cat_product{
+						display: inline-block;
+						padding: 0px 15px 0px 15px;
+						color: var(--text);
+						font-weight: 500;
+					}
+					.button{
+						visibility: visible;
+						opacity: 1;
+					}
+					.onsale{
+						display: inline-block;
+						top: 10px;
+						right: 10px;
+						left: auto;
+						background: var(--primary);
+						padding: 0 10px;
+						margin: 0;
+						min-height: 25px;
+						line-height: 25px;
+						font-size: 14px;
+						font-weight: 600;
+						min-width: unset;
+						border-radius: 3px;
+						text-transform: uppercase;
+					}
+					a.woocommerce-loop-product__link{}
+					.woocommerce-loop-product__title{
+						font-size: 20px;
+						color: var(--heading);
+						z-index: 3;
+						font-weight: 600;
+					}
+					.price{
+						font-size: 16px;
+						line-height: 1.3;
+						color: var(--primary);
+						font-weight: 600;
+						padding: 0px 15px 0px 15px;
+						ins{
+							font-weight: 600;
+							margin-left: 6px;
+							text-decoration: none;
+						}
+					}
+					
+					.button, 
+					a.add_to_cart_button{
+					    font-weight: 400;
+					    width: 100%;
+					    max-width: 208px;
+					    background: #ECF0F4;
+					    border-radius: 0;
+					    
+					    &.loading:after{
+							right: 0.5em;
+						}
+						
+						&:hover{
+							color: #fff;
+							background: var(--primary);
+						}
+
+					}
+
+					a.added_to_cart{
+						margin-top: 20px;
+						display: inline-block;
+						visibility: visible;
+						opacity: 1;
+						background-color: transparent !important;
+						color: var(--heading);
+						text-decoration: underline;
+						text-transform: capitalize;
+						padding: 0px 15px 0px 15px;
+						&:hover{
+							color: var(--primary);
+							transition: 0.3s ease;
+						};	
+						&:after{
+							padding-left: 5px;
+						}	
+					}
+
+					.product_type_external,
+					.product_type_grouped,
+					.product_type_variable{
+						&:after{
+							position: absolute;
+						    top: 0;
+						    right: 10px;	
+						}
+						
+					}
+					
+					.star-rating {
+					    text-align: center;
+					    margin: 0 auto;
+					    margin-bottom: 10px;
+					}
+
+				}
+			}
+			
+			
+		}
+		
+	}
+
+	&.elementor-default #woo_main{
+		padding: 0 10px;
+	}
+
+}

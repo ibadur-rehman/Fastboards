@@ -1,0 +1,25 @@
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	border-radius: 4px;
+	background-color: var(--primary);
+	color: #fff;
+	text-align: center;
+
+	@media (max-width: 768px) {
+	    bottom: 100px;
+	  }
+
+	&:hover{
+		background-color: #333;	
+		@include transaction ( all, 0.3s, linear );
+	}
+
+	i{
+		position: relative;
+		display: inline-block;
+		color: #fff;
+	    padding: 10px 10px 5px 10px;
+	}
+
+}

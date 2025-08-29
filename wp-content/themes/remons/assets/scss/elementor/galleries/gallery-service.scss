@@ -1,0 +1,233 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ){
+	transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+
+.ova-gallery-service{
+
+	.wrap-content{
+		position: relative;
+		overflow: hidden;
+
+		.item{
+			@include transaction( all, 0.5s, ease);  
+			position: relative;
+			cursor: pointer;
+
+			&:hover{
+				@include transaction( all, 0.5s, ease);  
+				img{
+					@include transaction( all, 0.5s, ease);  
+				}
+				.content{
+					@include transaction( all, 0.3s, ease);
+					opacity: 1;
+					bottom: 30px;
+				}
+			}
+
+			img{
+				@include transaction( all, 0.5s, ease);
+				display: block;
+				width: 100%;
+				object-fit:cover;
+			}
+
+			.content{
+				@include transaction( all, 0.3s, ease);
+				position: absolute;
+				width: 100%;
+				bottom: 20px;
+				left: 30px;
+				opacity: 0;
+
+				.wrap-title{
+					display: flex;
+					align-items:center;
+					column-gap: 7px;
+					background-color: var(--secondary);
+					padding: 10px 22px;
+					width: max-content; 
+					max-width: 85%;
+
+					.icon{
+						display: inline-flex;
+						i{
+							font-size: 21px;
+							display: inline-flex;
+							color: #fff;
+						}
+						svg{
+							width: 21px;
+							height: 21px;
+						}
+					}
+					.title{
+						margin: 0;
+						font-size: 16px;
+						line-height: 1.2;
+						font-weight: 400;
+						letter-spacing: 1px;
+						color: #fff;
+						text-transform: uppercase;
+					}
+				}
+
+				.description{
+					display: inline-block;
+					margin: 0 0 8px 0;
+					padding: 6px 22px;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 1;
+					background-color: rgba(229, 229, 229, 0.71);
+					color: var(--heading);
+				}
+			}
+		}
+	}
+
+	&.template1 {
+		&.equal_column {
+			.wrap-content{
+				grid-template-columns: 1fr 1fr 1fr;
+				@media (max-width: 1024px) {
+					grid-template-columns: auto;
+				}
+			}
+		}
+		.wrap-content{
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: 1.6fr 1.6fr 1fr;
+			@media (max-width: 1024px) {
+				grid-template-columns: auto;
+			}
+			.item {
+				img {
+					height: 430px;
+					@media (max-width: 1024px) {
+						height: 360px;
+					}
+				}
+			}
+		}
+	}
+
+	&.template2{
+		.background-text{
+			margin: 0;
+			font-size: 50px;
+			text-transform: uppercase;
+			color: var(--primary);
+
+			opacity: 0.3;
+			position: absolute;
+			top: 50%;
+			left: -80px;
+			transform: translate(-50% , -50%) rotate(-90deg);
+			z-index: 1;
+			
+			@media(max-width: 1600px){
+				font-size: 48px;
+				left: -40px;
+			}
+			@media(max-width: 1320px){
+				left: 0;
+			}
+			@media(max-width: 1024px){
+				font-size: 36px;
+				left: 20px;
+			}
+			@media(max-width: 767px){
+				display: none;
+			}
+		}
+
+		.wrap-content{
+			display: flex;
+			@media (max-width: 1024px) {
+				flex-direction: column;
+			}
+			.item{
+				width: 100%;
+				flex: 1;
+				&:hover{
+					flex: 1.8;
+				}
+				img{
+					width: 100%;
+					height: 420px;
+					filter: none;
+					@media (max-width: 600px) {
+						height: 330px;
+					}
+				}
+			}
+		}
+	}
+	&.template3{
+		&.two_column {
+			.wrap-content {
+				grid-template-columns: repeat(2,1fr);
+				@media (max-width: 767px) {
+					grid-template-columns: auto;
+				}
+			}
+		}
+		&.three_column {
+			.wrap-content {
+				grid-template-columns: repeat(3,1fr);
+				@media (max-width: 1024px) {
+					grid-template-columns: repeat(2,1fr);
+				}
+				@media (max-width: 767px) {
+					grid-template-columns: auto;
+				}
+			}
+		}
+		&.four_column {
+			.wrap-content { 
+				grid-template-columns: repeat(4,1fr);
+				@media (max-width: 1200px) {
+					grid-template-columns: repeat(3,1fr);
+				}
+				@media (max-width: 1024px) {
+					grid-template-columns: repeat(2,1fr);
+				}
+				@media (max-width: 767px) {
+					grid-template-columns: auto;
+				}
+			}
+		}
+		.wrap-content{
+			display: grid;
+			grid-gap: 30px;
+
+			.item {
+				img {
+					height: 260px;
+				}
+				.content{
+					.wrap-title{
+						background-color: var(--heading);
+					}
+				}
+			}
+		}
+	}
+}
+
+.rtl {
+	.ova-gallery-service {
+		.item {
+			.content {
+				left: unset;
+				right: 30px;		
+			}
+		}
+	}
+}		

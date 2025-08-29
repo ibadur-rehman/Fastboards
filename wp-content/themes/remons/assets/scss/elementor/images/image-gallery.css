@@ -1,0 +1,65 @@
+.ova-image-gallery .ova-image-gallery-ft {
+  display: inline-grid;
+  gap: 10px;
+}
+.ova-image-gallery .ova-image-gallery-ft.two_column {
+  grid-template-columns: 1fr 1fr;
+}
+.ova-image-gallery .ova-image-gallery-ft.three_column {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ova-image-gallery .ova-image-gallery-ft.four_column {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft {
+  display: inline-flex;
+  position: relative;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft img {
+  width: 100%;
+  height: 100%;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft .overlay {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft .overlay .icon {
+  display: inline-flex;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft .overlay .icon i {
+  display: inherit;
+  font-size: 20px;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft .overlay .icon svg {
+  display: inherit;
+  width: 20px;
+  fill: #fff;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft:hover {
+  cursor: pointer;
+}
+.ova-image-gallery .ova-image-gallery-ft .item-fancybox-ft:hover .overlay {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  opacity: 0.85;
+}

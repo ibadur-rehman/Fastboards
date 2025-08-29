@@ -1,0 +1,51 @@
+.ova-progress-circle-wrapper {
+  text-align: center;
+}
+.ova-progress-circle-wrapper.template2 {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ova-progress-circle-wrapper.template2 .ova-progress-circle .percent {
+  font-size: 24px;
+}
+.ova-progress-circle-wrapper.template2 .title {
+  margin-top: 0;
+  text-align: left;
+  font-weight: 600;
+}
+.ova-progress-circle-wrapper .ova-progress-circle {
+  display: inline-flex;
+  position: relative;
+}
+.ova-progress-circle-wrapper .ova-progress-circle .percent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--heading);
+  font-weight: var(--heading-font-weight);
+  transform: translate(-50%, -50%);
+}
+.ova-progress-circle-wrapper .ova-progress-circle .percent strong {
+  font-weight: var(--heading-font-weight);
+}
+.ova-progress-circle-wrapper .title {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  white-space: pre-line;
+}
+@media (max-width: 767px) {
+  .ova-progress-circle-wrapper .title {
+    white-space: normal;
+  }
+}
+
+.rtl .ova-progress-circle-wrapper.template2 .title {
+  text-align: right;
+}

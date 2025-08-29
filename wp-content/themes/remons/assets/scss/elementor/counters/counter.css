@@ -1,0 +1,377 @@
+.ova-counter {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 35px;
+  background-color: var(--secondary);
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 767px) {
+  .ova-counter {
+    padding: 25px;
+  }
+}
+.ova-counter:hover {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-counter:hover .title {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-counter:hover .odometer {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-counter .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.ova-counter .icon i {
+  display: inline-flex;
+  font-size: 62px;
+  color: #fff;
+}
+.ova-counter .icon svg {
+  width: 62px;
+  height: 62px;
+}
+.ova-counter .icon svg path {
+  fill: #fff;
+}
+.ova-counter .divider {
+  height: 86px;
+  width: 1px;
+  background-color: rgba(236, 240, 244, 0.1);
+}
+.ova-counter .counter-content {
+  line-height: 1;
+}
+.ova-counter .odometer {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: var(--secondary-font);
+  color: var(--heading);
+  font-size: 45px;
+  font-weight: 500;
+  color: #fff;
+  vertical-align: baseline !important;
+}
+.ova-counter .odometer .odometer-inside {
+  line-height: 1;
+}
+.ova-counter .suffix {
+  font-family: var(--primary-font);
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+}
+.ova-counter .title {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  font-family: var(--primary-font);
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: var(--font-weight);
+  color: #fff;
+}
+.ova-counter.ova-counter-template2 {
+  height: 190px;
+  width: 190px;
+  min-width: 190px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  padding: 25px;
+  background-color: var(--heading);
+}
+.ova-counter.ova-counter-template2.has-mask-image {
+  -webkit-mask-image: url("../../../img/base/vector.png");
+  mask-image: url("../../../img/base/vector.png");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.ova-counter.ova-counter-template2 .icon {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.07);
+}
+.ova-counter.ova-counter-template2 .icon i {
+  font-size: 32px;
+  color: var(--primary);
+}
+.ova-counter.ova-counter-template2 .icon svg {
+  width: 32px;
+  height: 32px;
+}
+.ova-counter.ova-counter-template2 .icon svg path {
+  fill: var(--primary);
+}
+.ova-counter.ova-counter-template2 .odometer {
+  font-size: 40px;
+}
+.ova-counter.ova-counter-template2 .suffix {
+  font-size: 40px;
+}
+.ova-counter.ova-counter-template2 .title {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+.ova-counter.ova-counter-template3 {
+  padding: 26px;
+  background-color: var(--primary);
+  border-radius: 0 10px 10px 0;
+}
+.ova-counter.ova-counter-template3.reversed_shape:before {
+  top: calc(100% - 0.5px);
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.ova-counter.ova-counter-template3:before {
+  position: absolute;
+  content: "";
+  top: -19.5px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  background-color: inherit;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.ova-counter.ova-counter-template3 .odometer {
+  font-size: 50px;
+}
+.ova-counter.ova-counter-template3 .suffix {
+  font-size: 50px;
+}
+.ova-counter.ova-counter-template3 .title {
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ova-counter.ova-counter-template4 {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 0;
+  justify-content: center;
+}
+.ova-counter.ova-counter-template4 .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ova-counter.ova-counter-template4 .icon i {
+  color: rgba(119, 121, 126, 0.25);
+}
+.ova-counter.ova-counter-template4 .icon svg path {
+  fill: rgba(119, 121, 126, 0.25);
+}
+.ova-counter.ova-counter-template4 .counter-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.ova-counter.ova-counter-template4 .odometer, .ova-counter.ova-counter-template4 .suffix, .ova-counter.ova-counter-template4 .title {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--heading);
+}
+@media (max-width: 767px) {
+  .ova-counter.ova-counter-template4 .odometer, .ova-counter.ova-counter-template4 .suffix, .ova-counter.ova-counter-template4 .title {
+    font-size: 27px;
+  }
+}
+@media (max-width: 400px) {
+  .ova-counter.ova-counter-template4 .odometer, .ova-counter.ova-counter-template4 .suffix, .ova-counter.ova-counter-template4 .title {
+    font-size: 24px;
+  }
+}
+.ova-counter.ova-counter-template5 {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 0;
+}
+.ova-counter.ova-counter-template5:hover {
+  background-color: #fff;
+}
+.ova-counter.ova-counter-template5 .icon i {
+  font-size: 62px;
+  color: var(--primary);
+}
+.ova-counter.ova-counter-template5 .icon svg {
+  width: 62px;
+  height: 62px;
+}
+.ova-counter.ova-counter-template5 .icon svg path {
+  fill: var(--primary);
+}
+.ova-counter.ova-counter-template5 .odometer, .ova-counter.ova-counter-template5 .suffix {
+  font-size: 55px;
+  font-weight: 700;
+  color: var(--heading);
+}
+@media (max-width: 767px) {
+  .ova-counter.ova-counter-template5 .odometer, .ova-counter.ova-counter-template5 .suffix {
+    font-size: 45px;
+  }
+}
+.ova-counter.ova-counter-template5 .title {
+  margin: 8px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading);
+}
+.ova-counter.ova-counter-template6 {
+  flex-direction: column-reverse;
+  border-radius: 15px;
+  align-items: unset;
+  padding: 40px 50px 40px;
+  gap: 0;
+  position: relative;
+}
+.ova-counter.ova-counter-template6:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+.ova-counter.ova-counter-template6:after {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 201px;
+  left: 151px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: -50px -100px 0 0 rgba(255, 255, 255, 0.1);
+}
+.ova-counter.ova-counter-template6 .counter-wrap {
+  margin-bottom: 10px;
+}
+.ova-counter.ova-counter-template6 .counter-wrap .odometer {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+.ova-counter.ova-counter-template6 .title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.ova-counter.ova-counter-template6 .divider {
+  display: none;
+}
+.ova-counter.ova-counter-template6 .icon {
+  justify-content: flex-start;
+  align-items: center;
+}
+.ova-counter.ova-counter-template6 .icon i {
+  font-size: 50px;
+}
+.ova-counter.ova-counter-template7 {
+  background-color: var(--primary);
+  flex-direction: column-reverse;
+  border-radius: 10px;
+  align-items: unset;
+  justify-content: unset;
+  padding: 40px 40px 28px 42px;
+  gap: 0;
+  position: relative;
+}
+.ova-counter.ova-counter-template7:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+.ova-counter.ova-counter-template7:after {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 201px;
+  left: 201px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: -50px -100px 0 0 rgba(255, 255, 255, 0.1);
+}
+.ova-counter.ova-counter-template7 .counter-wrap {
+  margin-bottom: 73px;
+}
+.ova-counter.ova-counter-template7 .counter-wrap .odometer {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+.ova-counter.ova-counter-template7 .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: -0.4px;
+}
+.ova-counter.ova-counter-template7 .introduce {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 0;
+}
+.ova-counter.ova-counter-template7 .divider {
+  display: none;
+}
+.ova-counter.ova-counter-template7 .icon {
+  display: none;
+}

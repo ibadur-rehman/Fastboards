@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "flaticon_remons";
+    src: url("./flaticon_remons.ttf?621ad7a7b31efd746d5e270a738c4190") format("truetype"),
+url("./flaticon_remons.woff?621ad7a7b31efd746d5e270a738c4190") format("woff"),
+url("./flaticon_remons.woff2?621ad7a7b31efd746d5e270a738c4190") format("woff2"),
+url("./flaticon_remons.eot?621ad7a7b31efd746d5e270a738c4190#iefix") format("embedded-opentype"),
+url("./flaticon_remons.svg?621ad7a7b31efd746d5e270a738c4190#flaticon_remons") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_remons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-email:before {
+    content: "\f101";
+}
+.flaticon-pin:before {
+    content: "\f102";
+}
+.flaticon-magnifying-glass:before {
+    content: "\f103";
+}
+.flaticon-sports-car:before {
+    content: "\f104";
+}
+.flaticon-buy:before {
+    content: "\f105";
+}
+.flaticon-focus:before {
+    content: "\f106";
+}
+.flaticon-rating:before {
+    content: "\f107";
+}
+.flaticon-gearbox:before {
+    content: "\f108";
+}
+.flaticon-seat:before {
+    content: "\f109";
+}
+.flaticon-car-door:before {
+    content: "\f10a";
+}
+.flaticon-gas-station:before {
+    content: "\f10b";
+}
+.flaticon-infrastructure:before {
+    content: "\f10c";
+}
+.flaticon-building:before {
+    content: "\f10d";
+}
+.flaticon-like:before {
+    content: "\f10e";
+}
+.flaticon-paper-plane:before {
+    content: "\f10f";
+}
+.flaticon-quote:before {
+    content: "\f110";
+}
+.flaticon-sedan:before {
+    content: "\f111";
+}
+.flaticon-suv:before {
+    content: "\f112";
+}
+.flaticon-limousine:before {
+    content: "\f113";
+}
+.flaticon-cabriolet:before {
+    content: "\f114";
+}
+.flaticon-pickup:before {
+    content: "\f115";
+}
+.flaticon-compact-car:before {
+    content: "\f116";
+}
+.flaticon-search:before {
+    content: "\f117";
+}
+.flaticon-book:before {
+    content: "\f118";
+}
+.flaticon-electric-car:before {
+    content: "\f119";
+}
+.flaticon-booking:before {
+    content: "\f11a";
+}
+.flaticon-booking-1:before {
+    content: "\f11b";
+}
+.flaticon-earth-grid:before {
+    content: "\f11c";
+}
+.flaticon-quotes:before {
+    content: "\f11d";
+}
+.flaticon-gallery:before {
+    content: "\f11e";
+}
+.flaticon-car:before {
+    content: "\f11f";
+}
+.flaticon-24-hours-support:before {
+    content: "\f120";
+}
+.flaticon-reduced:before {
+    content: "\f121";
+}
+.flaticon-speedometer:before {
+    content: "\f122";
+}
+.flaticon-calendar:before {
+    content: "\f123";
+}
+.flaticon-question:before {
+    content: "\f124";
+}
+.flaticon-email-1:before {
+    content: "\f125";
+}
+.flaticon-location:before {
+    content: "\f126";
+}
+.flaticon-delivery-car:before {
+    content: "\f127";
+}
+.flaticon-support:before {
+    content: "\f128";
+}
+.flaticon-clock:before {
+    content: "\f129";
+}
+.flaticon-pin-1:before {
+    content: "\f12a";
+}
+.flaticon-offer:before {
+    content: "\f12b";
+}
+.flaticon-down-arrow:before {
+    content: "\f12c";
+}
+.flaticon-play-button-arrowhead:before {
+    content: "\f12d";
+}
+.flaticon-choose:before {
+    content: "\f12e";
+}
+.flaticon-plus:before {
+    content: "\f12f";
+}
+.flaticon-minus-sign:before {
+    content: "\f130";
+}
+.flaticon-vote:before {
+    content: "\f131";
+}
+.flaticon-box:before {
+    content: "\f132";
+}
+.flaticon-transportation:before {
+    content: "\f133";
+}
+.flaticon-package:before {
+    content: "\f134";
+}
+.flaticon-micro-scooter:before {
+    content: "\f135";
+}
+.flaticon-check:before {
+    content: "\f136";
+}
+.flaticon-calendar-1:before {
+    content: "\f137";
+}
+.flaticon-quotation:before {
+    content: "\f138";
+}
+.flaticon-speed:before {
+    content: "\f139";
+}
+.flaticon-man:before {
+    content: "\f13a";
+}
+.flaticon-secure-shield:before {
+    content: "\f13b";
+}
+.flaticon-search-1:before {
+    content: "\f13c";
+}
+.flaticon-right-arrow:before {
+    content: "\f13d";
+}
+.flaticon-villa:before {
+    content: "\f13e";
+}
+.flaticon-star:before {
+    content: "\f13f";
+}
+.flaticon-bed:before {
+    content: "\f140";
+}
+.flaticon-bath-tub:before {
+    content: "\f141";
+}
+.flaticon-address:before {
+    content: "\f142";
+}
+.flaticon-villa-1:before {
+    content: "\f143";
+}
+.flaticon-money-back:before {
+    content: "\f144";
+}
+.flaticon-quality-assurance:before {
+    content: "\f145";
+}

@@ -1,0 +1,57 @@
+.ova-switch-language {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+}
+.ova-switch-language .flag-img {
+  position: absolute;
+  left: -4px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3F3F3F;
+}
+.ova-switch-language select#ova-language {
+  margin: 0;
+  padding: 5px 27px;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  overflow: hidden;
+  color: var(--heading);
+}
+.ova-switch-language select#ova-language option {
+  color: var(--heading);
+  background-color: #fff;
+}
+.ova-switch-language select#ova-language:hover {
+  cursor: pointer;
+}
+.ova-switch-language .icon-select {
+  position: absolute;
+  right: 12px;
+  line-height: 1;
+}
+.ova-switch-language .icon-select i {
+  font-size: 10px;
+  list-style: 1;
+  color: var(--heading);
+}
+.ova-switch-language .icon-select i:before {
+  font-weight: 600 !important;
+}
+.ova-switch-language .icon-select svg {
+  width: 10px;
+  list-style: 1;
+  fill: var(--heading);
+}
+.ova-switch-language .icon-select svg:before {
+  font-weight: 600 !important;
+}

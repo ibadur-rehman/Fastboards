@@ -1,0 +1,137 @@
+.ova-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ova-contact-info.top {
+  flex-direction: column;
+  text-align: center;
+}
+.ova-contact-info.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.ova-contact-info .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.ova-contact-info .icon i, .ova-contact-info .icon svg {
+  display: inline-flex;
+  font-size: 20px;
+  color: var(--primary);
+  fill: var(--primary);
+}
+.ova-contact-info .icon svg {
+  width: 20px;
+}
+.ova-contact-info .icon svg path {
+  fill: var(--primary);
+}
+.ova-contact-info .contact .label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.ova-contact-info .contact .info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ova-contact-info .contact .info .item {
+  line-height: 1.3;
+  color: var(--text);
+}
+.ova-contact-info .contact .info .item a {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  color: var(--text);
+  padding: 0 !important;
+}
+.ova-contact-info .contact .info .item a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  left: 0px;
+  bottom: 0px;
+  transition: all 500ms ease;
+  background-color: var(--primary);
+}
+.ova-contact-info .contact .info .item a:hover {
+  color: var(--primary);
+}
+.ova-contact-info .contact .info .item a:hover:before {
+  width: 100%;
+}
+.ova-contact-info .contact .select-format {
+  position: relative;
+  cursor: pointer;
+}
+.ova-contact-info .contact .select-format .input-for-select {
+  position: relative;
+}
+.ova-contact-info .contact .select-format .input-for-select input[type=text] {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+.ova-contact-info .contact .select-format .input-for-select input[type=text]::placeholder {
+  color: inherit;
+}
+.ova-contact-info .contact .select-format .input-for-select input[type=text]:focus {
+  color: inherit;
+}
+.ova-contact-info .contact .select-format .input-for-select i {
+  position: absolute;
+  display: inline-flex;
+  right: 12px;
+  top: 18px;
+}
+.ova-contact-info .contact .select-format .info {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  width: 100%;
+}
+.ova-contact-info .contact .select-format .info.visible {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+}
+.ova-contact-info .contact .select-format .info .item {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: var(--secondary);
+}
+.ova-contact-info .contact .select-format .info .item:not(:last-child) {
+  margin-bottom: 1px;
+}
+.ova-contact-info .contact .select-format .info .item:hover {
+  background-color: var(--primary);
+}
+.ova-contact-info .contact .select-format .info .item:hover a {
+  color: #fff;
+}
+
+.rtl .ova-contact-info .contact .select-format .input-for-select i {
+  right: unset;
+  left: 12px;
+}

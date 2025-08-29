@@ -1,0 +1,155 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_remons2";
+    src: url("./flaticon_remons2.woff2?bf9876f1734456e124ab3c3d94aa18fc") format("woff2"),
+url("./flaticon_remons2.woff?bf9876f1734456e124ab3c3d94aa18fc") format("woff"),
+url("./flaticon_remons2.eot?bf9876f1734456e124ab3c3d94aa18fc#iefix") format("embedded-opentype"),
+url("./flaticon_remons2.ttf?bf9876f1734456e124ab3c3d94aa18fc") format("truetype"),
+url("./flaticon_remons2.svg?bf9876f1734456e124ab3c3d94aa18fc#flaticon_remons2") format("svg")
+}
+
+i[class^="flaticon2-"]:before, i[class*=" flaticon2-"]:before {
+    font-family: flaticon_remons2 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon2-car-engine:before {
+    content: "\f101";
+}
+.flaticon2-car:before {
+    content: "\f102";
+}
+.flaticon2-play:before {
+    content: "\f103";
+}
+.flaticon2-sedan:before {
+    content: "\f104";
+}
+.flaticon2-car-1:before {
+    content: "\f105";
+}
+.flaticon2-car-door:before {
+    content: "\f106";
+}
+.flaticon2-right-arrow:before {
+    content: "\f107";
+}
+.flaticon2-baby-car-seat:before {
+    content: "\f108";
+}
+.flaticon2-seat:before {
+    content: "\f109";
+}
+.flaticon2-seat-belt:before {
+    content: "\f10a";
+}
+.flaticon2-seat-1:before {
+    content: "\f10b";
+}
+.flaticon2-baby-car-seat-1:before {
+    content: "\f10c";
+}
+.flaticon2-car-wash:before {
+    content: "\f10d";
+}
+.flaticon2-car-wash-1:before {
+    content: "\f10e";
+}
+.flaticon2-tire:before {
+    content: "\f10f";
+}
+.flaticon2-left-arrow:before {
+    content: "\f110";
+}
+.flaticon2-customer-support:before {
+    content: "\f111";
+}
+.flaticon2-precision:before {
+    content: "\f112";
+}
+.flaticon2-precision-1:before {
+    content: "\f113";
+}
+.flaticon2-repair:before {
+    content: "\f114";
+}
+.flaticon2-customer-service:before {
+    content: "\f115";
+}
+.flaticon2-shield:before {
+    content: "\f116";
+}
+.flaticon2-delivery:before {
+    content: "\f117";
+}
+.flaticon2-enter:before {
+    content: "\f118";
+}
+.flaticon2-login:before {
+    content: "\f119";
+}
+.flaticon2-logistics:before {
+    content: "\f11a";
+}
+.flaticon2-check-mark:before {
+    content: "\f11b";
+}
+.flaticon2-review:before {
+    content: "\f11c";
+}
+.flaticon2-darts:before {
+    content: "\f11d";
+}
+.flaticon2-review-1:before {
+    content: "\f11e";
+}
+.flaticon2-targeting:before {
+    content: "\f11f";
+}
+.flaticon2-plus:before {
+    content: "\f120";
+}
+.flaticon2-remove:before {
+    content: "\f121";
+}
+.flaticon2-email:before {
+    content: "\f122";
+}
+.flaticon2-map:before {
+    content: "\f123";
+}
+.flaticon2-group:before {
+    content: "\f124";
+}
+.flaticon2-rating:before {
+    content: "\f125";
+}
+.flaticon2-group-1:before {
+    content: "\f126";
+}
+.flaticon2-tools:before {
+    content: "\f127";
+}
+.flaticon2-customer:before {
+    content: "\f128";
+}
+.flaticon2-up-loading:before {
+    content: "\f129";
+}
+

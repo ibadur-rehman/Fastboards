@@ -1,0 +1,168 @@
+.ova-working-process {
+	display: flex;
+	column-gap: 35px; 
+	overflow-x: auto;
+	padding: 15px 0 55px 0;
+	border-bottom: 1px solid #D0D7DE;
+	cursor: all-scroll;
+
+	&.template2 {
+		.item-working-process {
+			&:hover {
+				.wrap-icon-number {
+					transition: all .3s ease;
+					border: 3px solid var(--primary);
+					.count {
+						transition: all .3s ease;
+						color: #fff;
+						background-color: var(--heading);
+					}				
+				}
+			}
+
+			.wrap-icon-number {
+				transition: all .3s ease;
+				width: 190px;
+				height: 190px;
+				border: 3px solid transparent;
+				overflow: hidden;
+				margin-bottom: 35px;
+				.icon {
+					border: 1px solid rgba(22, 36, 61, 0.1);
+					width: 77px;
+					height: 77px;
+					margin-top: -37px;
+					i {
+						font-size: 45px;
+						color: var(--primary);
+					}
+				}
+				.count {
+					transition: all .3s ease;
+					top: 70%;
+					right: 50%;
+					width: 100%;
+					height: auto;
+					border-radius: 0;
+					padding: 8px 12px;
+					background-color: var(--primary);
+					transform: translateX(50%);
+					font-weight: 600;
+					color: var(--heading);
+				}
+			}
+		}
+		.line-top {
+	        border-top: dotted 1.5px #C4CDD3;
+	    }
+	    .line-bottom {
+	        border-bottom: dotted 1.5px #C4CDD3;
+	    }
+
+	    // Scroll bar css
+		&::-webkit-scrollbar-thumb {
+			background: var(--primary); 
+		}
+
+		/* Firefox */
+		scrollbar-color: var(--primary) transparent;
+	}
+
+	div:last-child {
+		display: none;
+	}
+
+	.item-working-process {
+		position: relative;
+		flex: 0 0 240px;
+		text-align: center;
+		
+		.wrap-icon-number{
+			position: relative;
+			margin-bottom: 20px; 
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 154px;
+			height: 154px;
+			background-color: #fff;
+			box-shadow: 0 5px 30px rgba(0,0,0,0.07);
+			border-radius: 50%;
+			.icon {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 107px;
+				height: 107px;
+				border-radius: 50%;
+				border: 1px dashed var(--secondary);
+				i {
+					display: inline-flex;
+					font-size: 50px;
+					color: var(--secondary);
+				}
+				svg {
+					display: inline-flex;
+					width: 50px;
+					fill: var(--secondary);
+				}
+			}
+			.count {
+				position: absolute;
+				top: -10px;
+				right: 0;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				background-color: var(--secondary);
+				border-radius: 50%;
+				color: #fff;
+				line-height: 1;
+			}
+		}
+		.title {
+			margin: 0 0 12px 0;
+			font-size: 20px;
+		}
+		.description {
+			line-height: 1.5;
+		}
+	}
+
+	.line {
+		width:157px;
+        height:57px;
+        background: transparent;
+        border: none;
+	}
+
+	.line-top {
+        border-top: dashed 2px var(--secondary);
+        padding: 15px 67px;
+        border-radius: 50% 50% 0 0;
+        margin: 37px -87px 0;
+    }
+    .line-bottom {
+        border-bottom: dashed 2px var(--secondary);
+        padding: 15px 67px;
+        border-radius: 0 0 50% 50%;
+        margin: 78px -87px 0 -87px;
+    }
+
+	// Scroll bar css
+	&::-webkit-scrollbar {
+	    height: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent; 
+	}
+	&::-webkit-scrollbar-thumb {
+		background: var(--secondary); 
+	}
+
+	/* Firefox */
+	scrollbar-color: var(--secondary) transparent;
+	scrollbar-width: thin;
+}

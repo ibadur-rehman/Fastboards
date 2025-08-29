@@ -1,0 +1,105 @@
+.workflow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workflow .timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #e0e0e0;
+  z-index: 0;
+}
+.workflow .item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.workflow .item:hover .timeline-step {
+  background: var(--secondary);
+}
+.workflow .item:hover .workflow-content {
+  background: var(--White, #FFF);
+}
+.workflow .item .timeline-step {
+  background: var(--primary);
+  color: var(--White, #FFF);
+  font-size: 16px;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.workflow .item .timeline-step .timeline-bg {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: rgba(11, 85, 229, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+.workflow .item .timeline-step .timeline-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(11, 85, 229, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+.workflow .item .timeline-step span {
+  position: relative;
+  z-index: 2;
+}
+.workflow .item .workflow-content {
+  margin-top: 40px;
+  background: var(--Gray, #F3F4F6);
+  border-radius: 12px;
+  padding: 35px 68px;
+  text-align: center;
+  border: 1px solid #E6E7EA;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.workflow .item .workflow-content .workflow-title {
+  color: var(--heading);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: -0.48px;
+}
+.workflow .item .workflow-content .workflow-description {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.workflow .item:last-child {
+  margin-bottom: 0;
+}

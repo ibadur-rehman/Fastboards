@@ -1,0 +1,180 @@
+.ova-blog-4 {
+  display: grid;
+  gap: 30px;
+}
+.ova-blog-4.column_1 {
+  grid-template-columns: 1fr;
+}
+.ova-blog-4.column_2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.ova-blog-4.column_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1024px) {
+  .ova-blog-4.column_2, .ova-blog-4.column_3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .ova-blog-4.column_2, .ova-blog-4.column_3 {
+    grid-template-columns: 1fr;
+  }
+}
+.ova-blog-4 .item {
+  overflow: hidden;
+}
+.ova-blog-4 .item .media .box-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ova-blog-4 .item .media .box-img a {
+  display: flex;
+}
+.ova-blog-4 .item .media .box-img a img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.ova-blog-4 .item .media .box-img .post-date {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: #fff;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-blog-4 .item .media .box-img .post-date .date-j,
+.ova-blog-4 .item .media .box-img .post-date .date-MY {
+  line-height: normal;
+}
+.ova-blog-4 .item .media .box-img .post-date .date-j {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.ova-blog-4 .item .media .box-img .post-date .date-MY {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.ova-blog-4 .item .media .box-img .post-date:hover {
+  background-color: normal;
+  color: normal;
+}
+.ova-blog-4 .item .content .post-meta {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 14px 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+.ova-blog-4 .item .content .post-meta .post-category {
+  color: var(--primary);
+}
+.ova-blog-4 .item .content .post-meta .separator-icon {
+  font-size: 5px;
+  color: var(--heading);
+}
+.ova-blog-4 .item .content .post-meta .post-comment {
+  font-weight: 400;
+  color: var(--text);
+}
+.ova-blog-4 .item .content .post-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 35px;
+  font-style: normal;
+  letter-spacing: -0.44px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-blog-4 .item .content .post-title a {
+  color: var(--heading);
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.ova-blog-4 .item:hover .content .post-title a {
+  color: var(--primary);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.ova-blog-4 .item:hover .media .box-img img {
+  transform: scale(1.1);
+}
+
+.pagination-wrapper .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+.pagination-wrapper .pagination .prev.page-numbers.disabled {
+  display: none;
+  cursor: default;
+}
+.pagination-wrapper .pagination .next.page-numbers.disabled {
+  display: none;
+  cursor: default;
+}
+.pagination-wrapper .pagination .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #fff;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  margin: 0 3px;
+  padding: 0 15px;
+  border: 1px solid var(--light);
+  cursor: pointer;
+  font-weight: 400;
+  word-spacing: normal;
+}
+.pagination-wrapper .pagination .page-numbers:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+.pagination-wrapper .pagination .page-numbers.current {
+  background-color: var(--primary);
+  color: #fff;
+}
+.pagination-wrapper .pagination .page-numbers.dots {
+  pointer-events: none;
+  cursor: default;
+}

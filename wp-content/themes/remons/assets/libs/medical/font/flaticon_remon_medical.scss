@@ -1,0 +1,125 @@
+$flaticon_remon_medical-font: "flaticon_remon_medical";
+
+@font-face {
+    font-family: $flaticon_remon_medical-font;
+    src: url("./flaticon_remon_medical.woff2?65be32c0cb7c653b1e77e9796967d5c1") format("woff2"),
+url("./flaticon_remon_medical.woff?65be32c0cb7c653b1e77e9796967d5c1") format("woff"),
+url("./flaticon_remon_medical.eot?65be32c0cb7c653b1e77e9796967d5c1#iefix") format("embedded-opentype"),
+url("./flaticon_remon_medical.ttf?65be32c0cb7c653b1e77e9796967d5c1") format("truetype"),
+url("./flaticon_remon_medical.svg?65be32c0cb7c653b1e77e9796967d5c1#flaticon_remon_medical") format("svg");
+}
+
+i[class^="flaticon4-"]:before, i[class*=" flaticon4-"]:before {
+    font-family: flaticon_remon_medical !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_remon_medical-map: (
+    "medical-symbol": "\f101",
+    "search": "\f102",
+    "calendar": "\f103",
+    "medicine": "\f104",
+    "injection": "\f105",
+    "blood-test": "\f106",
+    "test": "\f107",
+    "x-rays": "\f108",
+    "mri": "\f109",
+    "x-ray": "\f10a",
+    "ecg-machine": "\f10b",
+    "cbc": "\f10c",
+    "medical-team": "\f10d",
+    "medical-symbol-1": "\f10e",
+    "phone": "\f10f",
+    "schedule": "\f110",
+    "microscope": "\f111",
+    "hospital": "\f112",
+    "community": "\f113",
+    "doctors-office": "\f114",
+    "stethoscope": "\f115",
+    "blood-test-1": "\f116",
+    "health-insurance": "\f117",
+    "forensic-science": "\f118",
+    "dental-care": "\f119",
+);
+
+.flaticon4-medical-symbol:before {
+    content: map-get($flaticon_remon_medical-map, "medical-symbol");
+}
+.flaticon4-search:before {
+    content: map-get($flaticon_remon_medical-map, "search");
+}
+.flaticon4-calendar:before {
+    content: map-get($flaticon_remon_medical-map, "calendar");
+}
+.flaticon4-medicine:before {
+    content: map-get($flaticon_remon_medical-map, "medicine");
+}
+.flaticon4-injection:before {
+    content: map-get($flaticon_remon_medical-map, "injection");
+}
+.flaticon4-blood-test:before {
+    content: map-get($flaticon_remon_medical-map, "blood-test");
+}
+.flaticon4-test:before {
+    content: map-get($flaticon_remon_medical-map, "test");
+}
+.flaticon4-x-rays:before {
+    content: map-get($flaticon_remon_medical-map, "x-rays");
+}
+.flaticon4-mri:before {
+    content: map-get($flaticon_remon_medical-map, "mri");
+}
+.flaticon4-x-ray:before {
+    content: map-get($flaticon_remon_medical-map, "x-ray");
+}
+.flaticon4-ecg-machine:before {
+    content: map-get($flaticon_remon_medical-map, "ecg-machine");
+}
+.flaticon4-cbc:before {
+    content: map-get($flaticon_remon_medical-map, "cbc");
+}
+.flaticon4-medical-team:before {
+    content: map-get($flaticon_remon_medical-map, "medical-team");
+}
+.flaticon4-medical-symbol-1:before {
+    content: map-get($flaticon_remon_medical-map, "medical-symbol-1");
+}
+.flaticon4-phone:before {
+    content: map-get($flaticon_remon_medical-map, "phone");
+}
+.flaticon4-schedule:before {
+    content: map-get($flaticon_remon_medical-map, "schedule");
+}
+.flaticon4-microscope:before {
+    content: map-get($flaticon_remon_medical-map, "microscope");
+}
+.flaticon4-hospital:before {
+    content: map-get($flaticon_remon_medical-map, "hospital");
+}
+.flaticon4-community:before {
+    content: map-get($flaticon_remon_medical-map, "community");
+}
+.flaticon4-doctors-office:before {
+    content: map-get($flaticon_remon_medical-map, "doctors-office");
+}
+.flaticon4-stethoscope:before {
+    content: map-get($flaticon_remon_medical-map, "stethoscope");
+}
+.flaticon4-blood-test-1:before {
+    content: map-get($flaticon_remon_medical-map, "blood-test-1");
+}
+.flaticon4-health-insurance:before {
+    content: map-get($flaticon_remon_medical-map, "health-insurance");
+}
+.flaticon4-forensic-science:before {
+    content: map-get($flaticon_remon_medical-map, "forensic-science");
+}
+.flaticon4-dental-care:before {
+    content: map-get($flaticon_remon_medical-map, "dental-care");
+}

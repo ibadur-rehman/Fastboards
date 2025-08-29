@@ -1,0 +1,53 @@
+.ovabrw-product-search-ajax {
+	.ova-product-search {
+		width: 30%;
+		@media (max-width: 1024px) {
+			width: 100%;
+		}
+		&.ovabrw_wd_search {
+			.product-search-form { 
+				box-shadow: none;
+				background-color: transparent;
+				.search-heading {
+					margin: -30px -25px 0 -25px;
+					font-size: 20px;
+					font-weight: 500;
+					color: #fff;
+					padding: 25px;
+					background-color: var(--secondary);
+				}
+				.product-search-content {
+					padding: 30px 25px;
+					background-color: #ecf0f4;
+					.label_search {
+						input[type="text"], select {
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.elementor_search_map .wrap_search_map .wrap_search {
+	.wrap_search_filter_title {
+	    .results_found {
+	    	line-height: 1.3;
+	    }
+	    #search_sort {
+	    	width: 44%;
+	    	max-width: 337px;
+	    	select {
+	    		font-size: 14px;
+		    	padding: 18px;
+		    	background-color: #ecf0f4; 
+		    	background-size: 10px 10px;
+		    	option {
+		    		font-weight: var(--font-weight);
+		    	}
+		    }
+	    }
+	} 
+}

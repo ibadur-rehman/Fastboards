@@ -1,0 +1,160 @@
+.ova-mc4wp-form{
+    position: relative;
+    .email {
+        input{
+            font-size: 14px;
+            line-height: 1;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.06);
+            caret-color: var(--primary);
+            border: none;
+            border-radius: 10px;
+            padding: 21px;
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+    }
+
+    .submit{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        button{
+            transition: all .3s ease;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border-radius: 50%;
+            color: #fff;
+            background-color: var(--secondary);
+            border: none;
+            i {
+                display: inline-flex;
+            }
+            &:hover{ 
+                background-color: var(--primary);
+            }
+        }
+    }
+}
+
+// additional class mc4wp template
+.ova-mc4wp-template2 {
+    .ova-mc4wp-form {
+        .email {
+            input {
+                color: #fff;
+                font-weight: 500;
+                border-radius: 6px;
+                border: 1px solid rgba(255,255,255,0.2);
+                background-color: #080C0F;
+            }
+        } 
+        .submit {
+            button {
+                border-radius: 6px;
+                background-color: var(--primary);
+                color: var(--heading);
+            }
+        }
+    }
+}
+
+// additional class mc4wp template 3
+.ova-mc4wp-template3 {
+    .ova-mc4wp-form-footer{
+        display: flex;
+        gap: 10px;
+        .email {
+            width: 100%;
+            input {
+                font-size: 16px;
+                line-height: 1;
+                width: 100%;   
+                border-radius: 14px;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                background-color: rgba(255, 255, 255, 0.05);
+                border: none;
+                border-radius: 14px;
+                padding: 21px;
+                color: #747A8B;
+                caret-color: var(--primary);
+                &::placeholder {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .submit {
+            button{
+                position: unset;
+                border-radius: 14px;
+                border: none;
+                background: var(--Blue, #0B55E5);
+                padding: 21px;
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                i{
+                    display: flex;
+                }
+
+                &:hover{ 
+                    background-color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+// Footer 3 medical
+.medical-footer-3 {
+    .ova-mc4wp-template3 {
+        .ova-mc4wp-form-footer{
+            .submit {
+                button{
+                    background: #2AC28E;
+                    
+                    &:hover{ 
+                        background-color: #0A55E4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// message error
+.mc4wp-response{
+    p{
+        color: #fff;
+        margin: 15px 0px !important; 
+        a {
+            color: var(--primary) !important; 
+        }
+    }
+}
+
+// agree-terms 
+.mc4wp-agree-terms {
+    margin: 10px 0 0 0;
+    color: #B4B4B4;
+}
+
+.rtl {
+    .ova-mc4wp-form{
+        .submit{
+            right: unset;
+            left: 10px;
+        }
+    }
+}

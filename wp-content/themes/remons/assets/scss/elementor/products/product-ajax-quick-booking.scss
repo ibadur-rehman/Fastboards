@@ -1,0 +1,231 @@
+.ovabrw-product-ajax-quick-booking {
+	&.list_vertical {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		@media (max-width: 1024px) {
+			grid-template-columns: auto;
+		}
+		.filter-wrap {
+			margin: 0;
+		}
+		.quick-booking-wrap {
+			margin-left: 10px;
+		}
+		.products-filter {
+			padding: 35px;
+			background-color: #f7f7f7;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-direction: column;
+			width: 100%;
+
+			.item {
+				font-size: 20px;
+				text-transform: capitalize;
+				padding: 10px 0;
+				border-bottom: 1px solid #D0D7DE;
+				width: 100%;
+				text-align: left; 
+				img {
+					transition: all .3s ease; 
+					position: absolute;
+					bottom: 83%;
+					right: 101%;
+					width: 130px;
+					height: 130px;
+					object-fit: cover;
+					opacity: 0;
+					visibility: hidden;
+					@media (max-width: 1024px) {
+						display: none;
+					}
+				}
+				&:hover, &.active {
+					text-decoration: none;
+					color: var(--primary);
+				}
+				&:hover {
+					img {
+						transition: all .3s ease; 
+						bottom: 89%;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+		.ajax-quick-booking-result {
+			grid-template-columns: 1fr;
+
+			.ovabrw-modern-product {
+				.ovabrw-product-form-tabs {
+					.ovabrw-tab-head, .ovabrw-tab-content {
+						border-radius: 0;
+
+						#booking_form, #request_booking {
+							border-radius: 0;
+						}
+					}
+				}
+			} 
+		}
+	}
+
+	.filter-wrap {
+		margin: 0 0 55px 0;
+		text-align: center;
+		@media (max-width: 1024px) {
+			margin: 0 0 40px 0;
+		}
+		select:not([size]):not([multiple]) {
+			max-width: 568px;
+			padding: 24px;
+			background-position: calc(100% - 24px) center;
+			box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+			border: none;
+			font-size: 20px;
+			color: var(--heading);
+		}
+	}
+
+	.products-filter {
+		margin: 0;
+		padding: 0;
+		display: inline-flex;
+		align-items: center;
+	    justify-content: center;
+	    flex-wrap: wrap;
+		list-style-type: none;
+		column-gap: 40px;
+		row-gap: 10px;
+
+		.item {
+			position: relative;
+			cursor: pointer;
+			margin: 0;
+			font-size: 25px;
+			font-weight: 600;
+			color: var(--heading);
+			text-transform: uppercase;
+			@media (max-width: 1024px) {
+				font-size: 21px;
+			}
+			@media (max-width: 767px) {
+				font-size: 18px;
+			}
+
+			&.active, &:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.quick-booking-wrap {
+		.ovabrw-loader {
+			display: none;
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			transform: translate(0, -50%);
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			border: 3px solid;
+			border-color: var(--ovabrw-primary-color) var(--ovabrw-primary-color) transparent;
+			box-sizing: border-box;
+			animation: rotation 1s linear infinite;
+			z-index: 1;
+
+			&:after {
+				content: '';  
+				box-sizing: border-box;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				border: 3px solid;
+				border-color: transparent var(--ovabrw-primary-color) var(--ovabrw-primary-color);
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				animation: rotationBack 0.5s linear infinite;
+				transform-origin: center center;
+			}
+
+			@keyframes rotation {
+			  	0% {
+			    	transform: rotate(0deg);
+			  	}
+			  	100% {
+			    	transform: rotate(360deg);
+			  	}
+			} 
+				    
+			@keyframes rotationBack {
+				0% {
+				    transform: rotate(0deg);
+				}
+				100% {
+				    transform: rotate(-360deg);
+				}
+			}
+		}
+	}
+
+	.ajax-quick-booking-result {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 50px;
+		@media (max-width: 1024px) {
+			grid-template-columns: auto;
+		}
+		.content-product {
+			.gallery {
+				.product-gallery {
+					margin-bottom: 45px;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 20px;
+					.gallery-item {
+						cursor: pointer;
+						img {
+							display: block;
+							width: 100%;
+							height: 174px;
+							object-fit: cover;
+							border-radius: 4px;
+						}
+					}
+				}
+			}
+			.details-button {
+				font-size: 18px;
+				font-weight: 500;
+				color: var(--text);
+				&:hover {
+					color: var(--primary);
+				}
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+}
+
+.rtl {
+	.ovabrw-product-ajax-quick-booking {
+		.filter-wrap {
+			select:not([size]):not([multiple]) {
+				background-position: left 24px top 50%;
+			}
+		}
+	}
+}  

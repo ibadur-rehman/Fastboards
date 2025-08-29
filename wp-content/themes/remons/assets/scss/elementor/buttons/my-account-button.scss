@@ -1,0 +1,40 @@
+.ova-my-account-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	img {
+		border-radius: 50% !important;
+	}
+	a {
+		transition: all .3s ease;
+		font-size: 15px;
+		color: var(--heading);
+		font-weight: 500;
+		line-height: 1.2;
+		&:hover {
+			transition: all .3s ease;
+			color: var(--primary);
+		}
+		&.ma-button {
+	        border-radius: 5px;
+	    	font-size: 14px;
+	    	padding: 10px 24px;
+	    	border: 1px solid transparent;
+	    	&:hover {
+	    		border: 1px solid var(--primary);
+	    	}
+	    	&.singup-button {
+	    		color: #fff;
+	    		background-color: var(--primary);
+	    		&:hover {
+	    			color: var(--primary);
+	    			background-color: transparent;
+	    		}
+	    	}
+		}
+	}
+}
+
+.elementor-widget-remons_elementor_my_account_button {
+	line-height: 1;
+}

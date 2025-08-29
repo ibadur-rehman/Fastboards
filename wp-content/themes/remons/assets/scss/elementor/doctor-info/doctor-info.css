@@ -1,0 +1,32 @@
+.doctor-info table {
+  margin: 0;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+.doctor-info table tr {
+  border-top: 1px solid #E6E7EA;
+  border-bottom: 1px solid #E6E7EA;
+  transition: 0.3s all;
+}
+.doctor-info table tr td {
+  padding: 15px 0;
+  vertical-align: middle;
+  border: none;
+}
+.doctor-info table tr .info-label {
+  width: 30%;
+  color: #747A8B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.doctor-info table tr .info-value {
+  width: 70%;
+  color: var(--heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}

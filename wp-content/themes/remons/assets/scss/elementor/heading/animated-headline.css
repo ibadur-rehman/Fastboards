@@ -1,0 +1,60 @@
+.ova-animated-headline .cd-intro .heading {
+  margin: 5px 0;
+  font-size: 50px;
+}
+@media (max-width: 1024px) {
+  .ova-animated-headline .cd-intro .heading {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .ova-animated-headline .cd-intro .heading {
+    font-size: 40px;
+  }
+}
+.ova-animated-headline .cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.ova-animated-headline .cd-headline.clip .cd-words-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary);
+}
+.ova-animated-headline .cd-headline.clip span {
+  display: inline-block;
+  padding: 0.2em 0;
+}
+.ova-animated-headline .cd-headline.clip b {
+  font-weight: 600;
+  color: var(--primary);
+  opacity: 0;
+}
+.ova-animated-headline .cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+.ova-animated-headline .cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.ova-animated-headline .cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.ova-animated-headline .cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.ova-animated-headline .no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.ova-animated-headline .no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}

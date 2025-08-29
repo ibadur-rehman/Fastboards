@@ -1,0 +1,301 @@
+$flaticon_remons-font: "flaticon_remons";
+
+@font-face {
+    font-family: $flaticon_remons-font;
+    src: url("./flaticon_remons.ttf?621ad7a7b31efd746d5e270a738c4190") format("truetype"),
+url("./flaticon_remons.woff?621ad7a7b31efd746d5e270a738c4190") format("woff"),
+url("./flaticon_remons.woff2?621ad7a7b31efd746d5e270a738c4190") format("woff2"),
+url("./flaticon_remons.eot?621ad7a7b31efd746d5e270a738c4190#iefix") format("embedded-opentype"),
+url("./flaticon_remons.svg?621ad7a7b31efd746d5e270a738c4190#flaticon_remons") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_remons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_remons-map: (
+    "email": "\f101",
+    "pin": "\f102",
+    "magnifying-glass": "\f103",
+    "sports-car": "\f104",
+    "buy": "\f105",
+    "focus": "\f106",
+    "rating": "\f107",
+    "gearbox": "\f108",
+    "seat": "\f109",
+    "car-door": "\f10a",
+    "gas-station": "\f10b",
+    "infrastructure": "\f10c",
+    "building": "\f10d",
+    "like": "\f10e",
+    "paper-plane": "\f10f",
+    "quote": "\f110",
+    "sedan": "\f111",
+    "suv": "\f112",
+    "limousine": "\f113",
+    "cabriolet": "\f114",
+    "pickup": "\f115",
+    "compact-car": "\f116",
+    "search": "\f117",
+    "book": "\f118",
+    "electric-car": "\f119",
+    "booking": "\f11a",
+    "booking-1": "\f11b",
+    "earth-grid": "\f11c",
+    "quotes": "\f11d",
+    "gallery": "\f11e",
+    "car": "\f11f",
+    "24-hours-support": "\f120",
+    "reduced": "\f121",
+    "speedometer": "\f122",
+    "calendar": "\f123",
+    "question": "\f124",
+    "email-1": "\f125",
+    "location": "\f126",
+    "delivery-car": "\f127",
+    "support": "\f128",
+    "clock": "\f129",
+    "pin-1": "\f12a",
+    "offer": "\f12b",
+    "down-arrow": "\f12c",
+    "play-button-arrowhead": "\f12d",
+    "choose": "\f12e",
+    "plus": "\f12f",
+    "minus-sign": "\f130",
+    "vote": "\f131",
+    "box": "\f132",
+    "transportation": "\f133",
+    "package": "\f134",
+    "micro-scooter": "\f135",
+    "check": "\f136",
+    "calendar-1": "\f137",
+    "quotation": "\f138",
+    "speed": "\f139",
+    "man": "\f13a",
+    "secure-shield": "\f13b",
+    "search-1": "\f13c",
+    "right-arrow": "\f13d",
+    "villa": "\f13e",
+    "star": "\f13f",
+    "bed": "\f140",
+    "bath-tub": "\f141",
+    "address": "\f142",
+    "villa-1": "\f143",
+    "money-back": "\f144",
+    "quality-assurance": "\f145",
+);
+
+.flaticon-email:before {
+    content: map-get($flaticon_remons-map, "email");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon_remons-map, "pin");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon_remons-map, "magnifying-glass");
+}
+.flaticon-sports-car:before {
+    content: map-get($flaticon_remons-map, "sports-car");
+}
+.flaticon-buy:before {
+    content: map-get($flaticon_remons-map, "buy");
+}
+.flaticon-focus:before {
+    content: map-get($flaticon_remons-map, "focus");
+}
+.flaticon-rating:before {
+    content: map-get($flaticon_remons-map, "rating");
+}
+.flaticon-gearbox:before {
+    content: map-get($flaticon_remons-map, "gearbox");
+}
+.flaticon-seat:before {
+    content: map-get($flaticon_remons-map, "seat");
+}
+.flaticon-car-door:before {
+    content: map-get($flaticon_remons-map, "car-door");
+}
+.flaticon-gas-station:before {
+    content: map-get($flaticon_remons-map, "gas-station");
+}
+.flaticon-infrastructure:before {
+    content: map-get($flaticon_remons-map, "infrastructure");
+}
+.flaticon-building:before {
+    content: map-get($flaticon_remons-map, "building");
+}
+.flaticon-like:before {
+    content: map-get($flaticon_remons-map, "like");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon_remons-map, "paper-plane");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_remons-map, "quote");
+}
+.flaticon-sedan:before {
+    content: map-get($flaticon_remons-map, "sedan");
+}
+.flaticon-suv:before {
+    content: map-get($flaticon_remons-map, "suv");
+}
+.flaticon-limousine:before {
+    content: map-get($flaticon_remons-map, "limousine");
+}
+.flaticon-cabriolet:before {
+    content: map-get($flaticon_remons-map, "cabriolet");
+}
+.flaticon-pickup:before {
+    content: map-get($flaticon_remons-map, "pickup");
+}
+.flaticon-compact-car:before {
+    content: map-get($flaticon_remons-map, "compact-car");
+}
+.flaticon-search:before {
+    content: map-get($flaticon_remons-map, "search");
+}
+.flaticon-book:before {
+    content: map-get($flaticon_remons-map, "book");
+}
+.flaticon-electric-car:before {
+    content: map-get($flaticon_remons-map, "electric-car");
+}
+.flaticon-booking:before {
+    content: map-get($flaticon_remons-map, "booking");
+}
+.flaticon-booking-1:before {
+    content: map-get($flaticon_remons-map, "booking-1");
+}
+.flaticon-earth-grid:before {
+    content: map-get($flaticon_remons-map, "earth-grid");
+}
+.flaticon-quotes:before {
+    content: map-get($flaticon_remons-map, "quotes");
+}
+.flaticon-gallery:before {
+    content: map-get($flaticon_remons-map, "gallery");
+}
+.flaticon-car:before {
+    content: map-get($flaticon_remons-map, "car");
+}
+.flaticon-24-hours-support:before {
+    content: map-get($flaticon_remons-map, "24-hours-support");
+}
+.flaticon-reduced:before {
+    content: map-get($flaticon_remons-map, "reduced");
+}
+.flaticon-speedometer:before {
+    content: map-get($flaticon_remons-map, "speedometer");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon_remons-map, "calendar");
+}
+.flaticon-question:before {
+    content: map-get($flaticon_remons-map, "question");
+}
+.flaticon-email-1:before {
+    content: map-get($flaticon_remons-map, "email-1");
+}
+.flaticon-location:before {
+    content: map-get($flaticon_remons-map, "location");
+}
+.flaticon-delivery-car:before {
+    content: map-get($flaticon_remons-map, "delivery-car");
+}
+.flaticon-support:before {
+    content: map-get($flaticon_remons-map, "support");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon_remons-map, "clock");
+}
+.flaticon-pin-1:before {
+    content: map-get($flaticon_remons-map, "pin-1");
+}
+.flaticon-offer:before {
+    content: map-get($flaticon_remons-map, "offer");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon_remons-map, "down-arrow");
+}
+.flaticon-play-button-arrowhead:before {
+    content: map-get($flaticon_remons-map, "play-button-arrowhead");
+}
+.flaticon-choose:before {
+    content: map-get($flaticon_remons-map, "choose");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon_remons-map, "plus");
+}
+.flaticon-minus-sign:before {
+    content: map-get($flaticon_remons-map, "minus-sign");
+}
+.flaticon-vote:before {
+    content: map-get($flaticon_remons-map, "vote");
+}
+.flaticon-box:before {
+    content: map-get($flaticon_remons-map, "box");
+}
+.flaticon-transportation:before {
+    content: map-get($flaticon_remons-map, "transportation");
+}
+.flaticon-package:before {
+    content: map-get($flaticon_remons-map, "package");
+}
+.flaticon-micro-scooter:before {
+    content: map-get($flaticon_remons-map, "micro-scooter");
+}
+.flaticon-check:before {
+    content: map-get($flaticon_remons-map, "check");
+}
+.flaticon-calendar-1:before {
+    content: map-get($flaticon_remons-map, "calendar-1");
+}
+.flaticon-quotation:before {
+    content: map-get($flaticon_remons-map, "quotation");
+}
+.flaticon-speed:before {
+    content: map-get($flaticon_remons-map, "speed");
+}
+.flaticon-man:before {
+    content: map-get($flaticon_remons-map, "man");
+}
+.flaticon-secure-shield:before {
+    content: map-get($flaticon_remons-map, "secure-shield");
+}
+.flaticon-search-1:before {
+    content: map-get($flaticon_remons-map, "search-1");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_remons-map, "right-arrow");
+}
+.flaticon-villa:before {
+    content: map-get($flaticon_remons-map, "villa");
+}
+.flaticon-star:before {
+    content: map-get($flaticon_remons-map, "star");
+}
+.flaticon-bed:before {
+    content: map-get($flaticon_remons-map, "bed");
+}
+.flaticon-bath-tub:before {
+    content: map-get($flaticon_remons-map, "bath-tub");
+}
+.flaticon-address:before {
+    content: map-get($flaticon_remons-map, "address");
+}
+.flaticon-villa-1:before {
+    content: map-get($flaticon_remons-map, "villa-1");
+}
+.flaticon-money-back:before {
+    content: map-get($flaticon_remons-map, "money-back");
+}
+.flaticon-quality-assurance:before {
+    content: map-get($flaticon_remons-map, "quality-assurance");
+}

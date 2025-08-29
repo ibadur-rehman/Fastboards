@@ -1,0 +1,42 @@
+.ova-menu-footer {
+	.menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 7px;
+			}
+			&.current-menu-item, &.current-menu-parent {
+				> a {
+					color: var(--primary); 
+				}
+			}
+		}
+		a {
+			transition: all .3s ease;
+			position: relative;
+			color: #8e94a5;
+			text-decoration: none;
+			&:before{
+				position: absolute;
+			   	content: '';
+			   	width: 0%;
+			   	height: 1px;
+			   	left: 0px;
+			   	bottom: 0px;
+			  	transition: all 500ms ease;
+			   	background-color: var(--primary);
+			}
+			&:hover{
+				&:before{
+					width: 100%;
+				}
+			}
+		}
+
+		.sub-menu {
+			list-style: none;
+		}
+	}
+}

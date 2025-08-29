@@ -1,0 +1,235 @@
+.ova-icon-box {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  border-radius: 10px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #e4e7eb;
+}
+.ova-icon-box:hover {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-icon-box:hover .iconbox {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.ova-icon-box:hover .iconbox .icon {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-icon-box:hover .title {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.ova-icon-box:hover .description {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.ova-icon-box:hover .button-readmore {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background-color: var(--primary);
+}
+.ova-icon-box:hover .button-readmore .text-button {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  color: #fff;
+}
+.ova-icon-box:hover .button-readmore .icon-button i {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  color: #fff;
+}
+.ova-icon-box:hover .button-readmore .icon-button svg {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  fill: #fff;
+}
+.ova-icon-box .iconbox {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  display: block;
+  padding: 38px 40px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .ova-icon-box .iconbox {
+    padding: 38px 30px 0;
+  }
+}
+@media (max-width: 400px) {
+  .ova-icon-box .iconbox {
+    padding: 38px 20px 0;
+  }
+}
+.ova-icon-box .iconbox .icon {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  margin: 0 0 -48px 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  height: 98px;
+  border: 9px solid #fff;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+@media (max-width: 1024px) {
+  .ova-icon-box .iconbox .icon {
+    width: 78px;
+    height: 78px;
+    border: 5px solid #fff;
+  }
+}
+.ova-icon-box .iconbox .icon i {
+  display: inline-flex;
+  font-size: 30px;
+  color: #fff;
+}
+.ova-icon-box a:hover .title {
+  color: var(--primary);
+}
+.ova-icon-box .title {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  margin: 0 0 14px 0;
+  font-size: 20px;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+@media (max-width: 1024px) {
+  .ova-icon-box .title {
+    white-space: normal;
+  }
+}
+.ova-icon-box .description {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  margin: 0 0 20px 0;
+  white-space: pre-line;
+}
+@media (max-width: 1024px) {
+  .ova-icon-box .description {
+    white-space: normal;
+  }
+}
+.ova-icon-box .button-readmore {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  background-color: #e4e7eb;
+  gap: 5px;
+}
+.ova-icon-box .button-readmore .text-button {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: var(--text);
+}
+.ova-icon-box .button-readmore .icon-button {
+  display: inline-flex;
+}
+.ova-icon-box .button-readmore .icon-button i {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text);
+}
+.ova-icon-box .button-readmore .icon-button svg {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  display: inline-flex;
+  width: 14px;
+  line-height: 1;
+  fill: var(--text);
+}
+.ova-icon-box.template2 {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: center;
+}
+.ova-icon-box.template2:hover .iconbox .icon i {
+  color: var(--secondary);
+}
+.ova-icon-box.template2:hover .title {
+  color: #fff;
+  background-color: var(--secondary);
+}
+.ova-icon-box.template2 .iconbox {
+  margin: 0;
+  border-radius: 0;
+  padding: 0 0 78px 0;
+}
+.ova-icon-box.template2 .iconbox .icon {
+  background-color: transparent;
+  border: none;
+}
+.ova-icon-box.template2 .iconbox .icon i {
+  font-size: 64px;
+  color: var(--primary);
+}
+.ova-icon-box.template2 .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 21px;
+  background-color: #ecf0f4;
+  border-radius: 10px 10px 0 0;
+}
+.ova-icon-box.template2 .description {
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}

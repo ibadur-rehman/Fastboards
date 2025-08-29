@@ -1,0 +1,245 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ) {
+    transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+
+.ova-blog-2 {
+	display: grid;
+	gap: 30px;
+
+	&.column_1 {
+		grid-template-columns: 1fr;
+	}
+
+	&.column_2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&.column_3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 1024px) {
+		&.column_2, &.column_3 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 768px) {
+		&.column_2, &.column_3 {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.item {
+		border-radius: 10px;
+		border: 1px solid #E6E7EA;
+		overflow: hidden;
+
+		.media {
+			padding: 10px 10px 0 10px;
+			border-bottom: 1px solid #E6E7EA;
+
+			.box-img {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+				border-radius: 10px;
+
+				a {
+					display: flex;
+
+					img {
+						width: 100%;
+						height: auto;
+						object-fit: cover;
+						@include transaction( all, 0.5s, ease);
+					}
+				}
+
+				.post-date {
+					position: absolute;
+					bottom: 10px;
+					right: 10px;
+					width: 80px;
+					height: 70px;
+					border-radius: 10px;
+					background-color: var(--primary);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					z-index: 2;
+					color: #fff;
+					@include transaction( all, 0.3s, ease);
+
+					.date-j,
+					.date-MY {
+						line-height: normal;
+						font-style: normal;
+					}
+
+					.date-j {
+						font-size: 30px;
+						font-weight: 600;
+						letter-spacing: -0.6px;
+					}
+
+					.date-MY {
+						font-size: 12px;
+						font-weight: 500;
+						text-transform: uppercase;
+					}
+
+					&:hover {
+						background-color: normal;
+						color: normal;
+					}
+				}
+			}
+
+			.post-meta {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 30px;
+				margin: 14px 0 16px;
+				font-size: 16px;
+				font-weight: 500;
+				font-style: normal;
+				line-height: normal;
+
+				.post-category {
+					color: var(--primary);
+				}
+
+				.separator-icon {
+					font-size: 5px;
+					color: var(--heading);
+				}
+
+				.post-comment {
+					color: var(--text);
+					font-weight: 400;
+				}
+			}
+		}
+
+		.content {
+			padding: 31px 40px 40px 40px;
+
+			.post-title {
+				margin: 0;
+				font-size: 24px;
+				line-height: 35px;
+
+				a {
+					color: var(--heading);
+					@include transaction( all, 0.3s, ease);
+				}
+			}
+
+			.short_desc {
+				p {
+					color: var(--text);
+					font-size: 16px;
+					font-weight: 400;
+					font-style: normal;
+					line-height: 26px;
+					margin-bottom: 25px;
+					margin-top: 20px;
+				}
+			}
+
+			.read-more {
+				display: inline-flex;
+				align-items: center;
+				padding: 15px 30px;
+				background-color: #F3F4F6;
+				border-radius: 14px;
+				color: #020D2B;
+				font-size: 16px;
+				font-weight: 500;
+				font-style: normal;
+				cursor: pointer;
+				line-height: 0;
+				@include transaction(all, 0.3s, ease);
+
+				&:hover {
+					background-color: var(--secondary);
+					color: #fff;
+				}
+
+				.icon {
+					margin-left: 5px;
+				}
+			}
+		}
+
+		&:hover .content .post-title a{
+        	color: var(--primary);
+        }
+
+        &:hover .media .box-img img{
+        	transform: scale(1.1);
+        }
+	}
+}
+
+.pagination-wrapper{
+	
+	.pagination{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    list-style: none;
+	    padding: 0;
+        margin: 60px 0 0 0;
+
+	    .prev.page-numbers.disabled {
+	        display: none;
+	        cursor: default;
+	      }
+
+	    .next.page-numbers.disabled {
+	      	display: none;
+	      	cursor: default;
+	    }
+
+	    .page-numbers{
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	        min-width: 40px;
+	        min-height: 40px;
+	        background-color: #fff;
+	        font-size: 14px;
+	        @include transaction(all, 0.5s, ease);
+	        margin: 0 3px;
+	        padding: 0 15px;
+	        border: 1px solid var(--light);
+	        cursor: pointer;
+	        font-weight: 400;
+            word-spacing: normal;
+
+	        &:hover{
+	            background-color: var(--primary);
+	            color: #fff;
+	        }
+
+	        &.current {
+	            background-color: var(--primary);
+	            color: #fff;
+	        }
+	    }
+
+	    .page-numbers.dots{
+	      	pointer-events: none;
+	      	cursor: default;
+	    }
+	}	
+}	
+

@@ -1,0 +1,191 @@
+.ova-product-list {
+  display: grid;
+  grid-gap: 30px;
+  grid-row-gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.ova-product-list.column1 {
+  grid-template-columns: 1fr;
+}
+.ova-product-list.column2 {
+  grid-template-columns: 1fr 1fr;
+}
+.ova-product-list.column3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ova-product-list.column4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1200px) {
+  .ova-product-list.column4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ova-product-list.column3, .ova-product-list.column4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ova-product-list.column2, .ova-product-list.column3, .ova-product-list.column4 {
+    grid-template-columns: 1fr;
+  }
+}
+.ova-product-list li.product {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 580px) {
+  .ova-product-list li.product {
+    width: 100%;
+    float: none;
+  }
+}
+.ova-product-list li.product .cat_product {
+  display: none;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 0 15px;
+}
+.ova-product-list li.product .button {
+  visibility: visible;
+  opacity: 1;
+}
+.ova-product-list li.product a.woocommerce-loop-product__link {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ova-product-list li.product a.woocommerce-loop-product__link img {
+  width: 100%;
+  height: 244px;
+  object-fit: cover;
+}
+.ova-product-list li.product .star-rating {
+  font-size: 13px;
+  margin: 0 auto 10px auto;
+  order: 3;
+  display: block;
+  float: none;
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 1em;
+  width: 5.4em;
+  font-family: "star";
+}
+.ova-product-list li.product .star-rating:before {
+  content: "sssss";
+  color: #d3ced2;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.ova-product-list li.product .star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+}
+.ova-product-list li.product .star-rating span:before {
+  content: "SSSSS";
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+.ova-product-list li.product .onsale {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  background: var(--primary);
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
+  min-height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: unset;
+  border-radius: 0;
+  text-transform: uppercase;
+  z-index: 9;
+}
+.ova-product-list li.product .woocommerce-loop-product__title {
+  font-size: 20px;
+  line-height: 1.4;
+  z-index: 3;
+}
+.ova-product-list li.product .price {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+.ova-product-list li.product .price ins {
+  margin-left: 6px;
+  text-decoration: none;
+}
+.ova-product-list li.product .button,
+.ova-product-list li.product a.add_to_cart_button {
+  display: inline-block;
+  transition: 0.4s;
+  z-index: 2;
+  margin: 10px 15px 0px 15px;
+  border: none;
+  font-weight: 400;
+  width: 100%;
+  max-width: 208px;
+  color: var(--text);
+  background: #ECF0F4;
+  border-radius: 0;
+}
+.ova-product-list li.product .button.loading:after,
+.ova-product-list li.product a.add_to_cart_button.loading:after {
+  right: 0.5em;
+}
+.ova-product-list li.product .button:hover,
+.ova-product-list li.product a.add_to_cart_button:hover {
+  color: #fff;
+  background: var(--heading);
+}
+.ova-product-list li.product a.added_to_cart {
+  margin-top: 20px;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  background-color: transparent !important;
+  color: var(--heading);
+  text-decoration: underline;
+  text-transform: capitalize;
+  padding: 0px 15px 0px 15px;
+}
+.ova-product-list li.product a.added_to_cart:hover {
+  color: var(--primary);
+  transition: 0.3s ease;
+}
+.ova-product-list li.product a.added_to_cart:after {
+  padding-left: 5px;
+}
+.ova-product-list li.product .product_type_external:after,
+.ova-product-list li.product .product_type_grouped:after,
+.ova-product-list li.product .product_type_variable:after {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.ova-product-list .ovabrw-features .feature-item {
+  justify-content: center;
+}

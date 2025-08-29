@@ -1,0 +1,252 @@
+// button
+.elementor-button-wrapper {
+	.elementor-button {
+		position: relative;
+		font-size: 1em;
+		font-weight: bold;
+		line-height: 1.3;
+		color: #fff;
+		background-color: var(--primary);
+		border-radius: 10px;
+		padding: 20px 40px;
+
+		&:hover {
+			transition: all .3s;
+			color: #fff;
+            background-color: var(--heading);
+		}
+
+		&:focus, &:visited {
+			color: #fff;
+			background-color: var(--primary);
+			&:hover {
+				transition: all .3s;
+	            background-color: var(--heading);
+	            color: #fff;
+			}
+		}
+
+		.elementor-button-content-wrapper {
+			align-items: center;
+		}
+
+		.elementor-button-icon {
+			display: inline-flex;
+		    z-index: 1;
+		    i {
+		    	display: inline-flex;
+		    }
+		}
+	}
+}
+.ova-triangle-button {
+	.elementor-button-wrapper {
+		.elementor-button {
+			&:before {
+				position: absolute;
+				content:"";
+				top: 0;
+				left: -0.5px;
+				width: 25px;
+				height: 100%;
+				background-color: #fff; 
+				-webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+				clip-path: polygon(100% 0, 0 0, 0 100%);
+				z-index: 1;
+			}
+		}
+	}
+}
+.ova-trapezoid-button {
+	.elementor-button-wrapper {
+		.elementor-button {
+			&:before {
+				content: "";
+				position: absolute;
+				right: calc(100% - 0.5px);
+				top: 0;
+				width: 12px;
+				height: 100%;
+				background-color: inherit;
+				-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+				clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				left: calc(100% - 0.5px);
+				top: 0;
+				width: 12px;
+				height: 100%;
+				background-color: inherit;
+				-webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+				clip-path: polygon(100% 0, 0 0, 0 100%);
+			}
+		}
+	}
+}
+
+/* custom scss icon list, icon box, icon widget default in elementor*/
+.elementor-icon-list-items {
+	.elementor-icon-list-icon {
+		color: var(--primary);
+	}
+}
+
+.elementor-view-stacked {
+	&.elementor-widget-icon, &.elementor-widget-icon-box {
+        .elementor-icon {
+			background-color: var(--primary); 
+		}
+	}
+} 
+
+.elementor-view-framed {
+	&.elementor-widget-icon, &.elementor-widget-icon-box {
+        .elementor-icon {
+        	color: var(--primary); 
+			border-color: var(--primary); 
+		}
+	}
+}
+
+.elementor-widget-icon {
+	.elementor-icon {
+		color: var(--primary); 
+	}
+	.elementor-icon-wrapper {
+		line-height: 1;
+	}
+}
+
+.elementor-widget-icon-box {
+	.elementor-icon {
+		color: var(--primary); 
+	}
+}
+
+.elementor-image-box-wrapper {
+	img {
+		display: block;
+	}
+}
+
+.elementor-image-gallery {
+	.gallery .gallery-item {
+		margin: 0!important;
+		img {
+			display: block;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.ova-triangle-container {
+	&:after {
+		position: absolute;
+		content:"";
+		top: 4px;
+		left: -0.5px;
+		width: 15px;
+		height: calc(100% - 3.5px);
+		background-color: #fff; 
+		-webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		z-index: 1;
+		@media (max-width: 1024px) {
+			content: none;
+		}
+	}
+}
+
+.ova-geometry {
+	overflow: hidden!important;
+	.geometry { 
+		content: ""; 
+		position: absolute;
+		bottom: -25%;
+		left: 0;
+		width: 20%;
+		height: 150%;
+		background: var(--primary);
+		opacity: 0.19;
+		transform: rotate(19deg);
+		transform-origin: bottom right;
+		@media (min-width: 1900px) {
+			left: 13%;
+		}
+		@media (min-width: 1600px) {
+			left: 6%;
+		}
+	}
+}
+
+.ova-container-height-fit.e-con {
+	height: fit-content;
+}
+
+// ova hide element
+.ova-hide-element-min1024-max1200{ 
+	@media (min-width: 1024px) and (max-width: 1200px) {
+		display: none;
+	}
+}
+.ova-hide-element-min1024-max1300{ 
+	@media (min-width: 1024px) and (max-width: 1300px) {
+		display: none;
+	}
+}
+.ova-hide-element-min1024-max1350{ 
+	@media (min-width: 1024px) and (max-width: 1350px) {
+		display: none;
+	}
+}
+.ova-hide-element-min1024-max1450{ 
+	@media (min-width: 1024px) and (max-width: 1450px) {
+		display: none;
+	}
+}
+.ova-hide-element-min1024-max1550{ 
+	@media (min-width: 1024px) and (max-width: 1550px) {
+		display: none;
+	}
+}
+
+.rtl {
+	.ova-triangle-container {
+		&:after {
+			left: unset;
+			right: -0.5px;
+			-webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    		clip-path: polygon(100% 0, 0 100%, 100% 100%);
+		}
+	}
+	.ova-triangle-button {
+		.elementor-button-wrapper {
+			.elementor-button {
+				&:before {
+					left: unset;
+					right: -0.5px;
+					-webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+					clip-path: polygon(100% 0, 0 0, 100% 100%);
+				}
+			}
+		}
+	}
+	.ova-geometry {
+		.geometry { 
+			left: unset;
+			right: 0;
+			transform: rotate(-19deg);
+			@media (min-width: 1900px) {
+				left: unset;
+				right: 13%;
+			}
+			@media (min-width: 1600px) {
+				left: unset;
+				right: 6%;
+			}
+		}
+	}
+}

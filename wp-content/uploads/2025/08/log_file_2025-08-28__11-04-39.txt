@@ -1,0 +1,49 @@
+
+---Downloaded files---
+The import files for: Shipping were successfully downloaded!
+Initial max execution time = 1200
+Files info:
+Site URL = http://fast-boards.local
+Data file = C:\Users\Ibadur\Local Sites\fast-boards\app\public/wp-content/themes/remons/install-resource/demo-import/shipping/demo-content.xml
+Widget file = C:\Users\Ibadur\Local Sites\fast-boards\app\public/wp-content/themes/remons/install-resource/demo-import/shipping/widgets.wie
+Customizer file = C:\Users\Ibadur\Local Sites\fast-boards\app\public/wp-content/themes/remons/install-resource/demo-import/shipping/customize.dat
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Search - No Title - Imported
+Text - Latest Posts - Imported
+Categories - Categories - Imported
+Tag Cloud - Tags - Imported
+
+WooCommerce Sidebar : 
+
+Product Search - No Title - Imported
+Product Categories - Product categories - Imported
+Filter Products by Price - Filter by price - Imported
+Products list - Products - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

@@ -1,0 +1,185 @@
+$flaticon_remons3-font: "flaticon_remons3";
+
+@font-face {
+    font-family: $flaticon_remons3-font;
+    src: url("./flaticon_remons3.woff2?cf4ac99b22de3428876dbb50e6756b66") format("woff2"),
+url("./flaticon_remons3.woff?cf4ac99b22de3428876dbb50e6756b66") format("woff"),
+url("./flaticon_remons3.eot?cf4ac99b22de3428876dbb50e6756b66#iefix") format("embedded-opentype"),
+url("./flaticon_remons3.ttf?cf4ac99b22de3428876dbb50e6756b66") format("truetype"),
+url("./flaticon_remons3.svg?cf4ac99b22de3428876dbb50e6756b66#flaticon_remons3") format("svg");
+}
+
+i[class^="flaticon3-"]:before, i[class*=" flaticon3-"]:before {
+    font-family: flaticon_remons3 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_remons3-map: (
+    "booking": "\f101",
+    "calendar-date": "\f102",
+    "check": "\f103",
+    "hotel": "\f104",
+    "flights": "\f105",
+    "airport": "\f106",
+    "airport-tower": "\f107",
+    "air-plane": "\f108",
+    "map": "\f109",
+    "user": "\f10a",
+    "car": "\f10b",
+    "car-1": "\f10c",
+    "calendar": "\f10d",
+    "delivery-man": "\f10e",
+    "profits": "\f10f",
+    "profit": "\f110",
+    "profits-1": "\f111",
+    "funds": "\f112",
+    "seat": "\f113",
+    "delivery-truck": "\f114",
+    "calculator": "\f115",
+    "rental-car": "\f116",
+    "pipette": "\f117",
+    "speedometer": "\f118",
+    "twitter": "\f119",
+    "vimeo": "\f11a",
+    "settings": "\f11b",
+    "driver": "\f11c",
+    "key": "\f11d",
+    "calendar-1": "\f11e",
+    "boom-lift": "\f11f",
+    "weight": "\f120",
+    "review": "\f121",
+    "depth": "\f122",
+    "package": "\f123",
+    "whatsapp": "\f124",
+    "whatsapp-1": "\f125",
+    "whatsapp-2": "\f126",
+    "social-media": "\f127",
+    "twitter-1": "\f128",
+);
+
+.flaticon3-booking:before {
+    content: map-get($flaticon_remons3-map, "booking");
+}
+.flaticon3-calendar-date:before {
+    content: map-get($flaticon_remons3-map, "calendar-date");
+}
+.flaticon3-check:before {
+    content: map-get($flaticon_remons3-map, "check");
+}
+.flaticon3-hotel:before {
+    content: map-get($flaticon_remons3-map, "hotel");
+}
+.flaticon3-flights:before {
+    content: map-get($flaticon_remons3-map, "flights");
+}
+.flaticon3-airport:before {
+    content: map-get($flaticon_remons3-map, "airport");
+}
+.flaticon3-airport-tower:before {
+    content: map-get($flaticon_remons3-map, "airport-tower");
+}
+.flaticon3-air-plane:before {
+    content: map-get($flaticon_remons3-map, "air-plane");
+}
+.flaticon3-map:before {
+    content: map-get($flaticon_remons3-map, "map");
+}
+.flaticon3-user:before {
+    content: map-get($flaticon_remons3-map, "user");
+}
+.flaticon3-car:before {
+    content: map-get($flaticon_remons3-map, "car");
+}
+.flaticon3-car-1:before {
+    content: map-get($flaticon_remons3-map, "car-1");
+}
+.flaticon3-calendar:before {
+    content: map-get($flaticon_remons3-map, "calendar");
+}
+.flaticon3-delivery-man:before {
+    content: map-get($flaticon_remons3-map, "delivery-man");
+}
+.flaticon3-profits:before {
+    content: map-get($flaticon_remons3-map, "profits");
+}
+.flaticon3-profit:before {
+    content: map-get($flaticon_remons3-map, "profit");
+}
+.flaticon3-profits-1:before {
+    content: map-get($flaticon_remons3-map, "profits-1");
+}
+.flaticon3-funds:before {
+    content: map-get($flaticon_remons3-map, "funds");
+}
+.flaticon3-seat:before {
+    content: map-get($flaticon_remons3-map, "seat");
+}
+.flaticon3-delivery-truck:before {
+    content: map-get($flaticon_remons3-map, "delivery-truck");
+}
+.flaticon3-calculator:before {
+    content: map-get($flaticon_remons3-map, "calculator");
+}
+.flaticon3-rental-car:before {
+    content: map-get($flaticon_remons3-map, "rental-car");
+}
+.flaticon3-pipette:before {
+    content: map-get($flaticon_remons3-map, "pipette");
+}
+.flaticon3-speedometer:before {
+    content: map-get($flaticon_remons3-map, "speedometer");
+}
+.flaticon3-twitter:before {
+    content: map-get($flaticon_remons3-map, "twitter");
+}
+.flaticon3-vimeo:before {
+    content: map-get($flaticon_remons3-map, "vimeo");
+}
+.flaticon3-settings:before {
+    content: map-get($flaticon_remons3-map, "settings");
+}
+.flaticon3-driver:before {
+    content: map-get($flaticon_remons3-map, "driver");
+}
+.flaticon3-key:before {
+    content: map-get($flaticon_remons3-map, "key");
+}
+.flaticon3-calendar-1:before {
+    content: map-get($flaticon_remons3-map, "calendar-1");
+}
+.flaticon3-boom-lift:before {
+    content: map-get($flaticon_remons3-map, "boom-lift");
+}
+.flaticon3-weight:before {
+    content: map-get($flaticon_remons3-map, "weight");
+}
+.flaticon3-review:before {
+    content: map-get($flaticon_remons3-map, "review");
+}
+.flaticon3-depth:before {
+    content: map-get($flaticon_remons3-map, "depth");
+}
+.flaticon3-package:before {
+    content: map-get($flaticon_remons3-map, "package");
+}
+.flaticon3-whatsapp:before {
+    content: map-get($flaticon_remons3-map, "whatsapp");
+}
+.flaticon3-whatsapp-1:before {
+    content: map-get($flaticon_remons3-map, "whatsapp-1");
+}
+.flaticon3-whatsapp-2:before {
+    content: map-get($flaticon_remons3-map, "whatsapp-2");
+}
+.flaticon3-social-media:before {
+    content: map-get($flaticon_remons3-map, "social-media");
+}
+.flaticon3-twitter-1:before {
+    content: map-get($flaticon_remons3-map, "twitter-1");
+}

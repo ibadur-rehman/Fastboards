@@ -1,0 +1,152 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_remons3";
+    src: url("./flaticon_remons3.woff2?cf4ac99b22de3428876dbb50e6756b66") format("woff2"),
+url("./flaticon_remons3.woff?cf4ac99b22de3428876dbb50e6756b66") format("woff"),
+url("./flaticon_remons3.eot?cf4ac99b22de3428876dbb50e6756b66#iefix") format("embedded-opentype"),
+url("./flaticon_remons3.ttf?cf4ac99b22de3428876dbb50e6756b66") format("truetype"),
+url("./flaticon_remons3.svg?cf4ac99b22de3428876dbb50e6756b66#flaticon_remons3") format("svg")
+}
+
+i[class^="flaticon3-"]:before, i[class*=" flaticon3-"]:before {
+    font-family: flaticon_remons3 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon3-booking:before {
+    content: "\f101";
+}
+.flaticon3-calendar-date:before {
+    content: "\f102";
+}
+.flaticon3-check:before {
+    content: "\f103";
+}
+.flaticon3-hotel:before {
+    content: "\f104";
+}
+.flaticon3-flights:before {
+    content: "\f105";
+}
+.flaticon3-airport:before {
+    content: "\f106";
+}
+.flaticon3-airport-tower:before {
+    content: "\f107";
+}
+.flaticon3-air-plane:before {
+    content: "\f108";
+}
+.flaticon3-map:before {
+    content: "\f109";
+}
+.flaticon3-user:before {
+    content: "\f10a";
+}
+.flaticon3-car:before {
+    content: "\f10b";
+}
+.flaticon3-car-1:before {
+    content: "\f10c";
+}
+.flaticon3-calendar:before {
+    content: "\f10d";
+}
+.flaticon3-delivery-man:before {
+    content: "\f10e";
+}
+.flaticon3-profits:before {
+    content: "\f10f";
+}
+.flaticon3-profit:before {
+    content: "\f110";
+}
+.flaticon3-profits-1:before {
+    content: "\f111";
+}
+.flaticon3-funds:before {
+    content: "\f112";
+}
+.flaticon3-seat:before {
+    content: "\f113";
+}
+.flaticon3-delivery-truck:before {
+    content: "\f114";
+}
+.flaticon3-calculator:before {
+    content: "\f115";
+}
+.flaticon3-rental-car:before {
+    content: "\f116";
+}
+.flaticon3-pipette:before {
+    content: "\f117";
+}
+.flaticon3-speedometer:before {
+    content: "\f118";
+}
+.flaticon3-twitter:before {
+    content: "\f119";
+}
+.flaticon3-vimeo:before {
+    content: "\f11a";
+}
+.flaticon3-settings:before {
+    content: "\f11b";
+}
+.flaticon3-driver:before {
+    content: "\f11c";
+}
+.flaticon3-key:before {
+    content: "\f11d";
+}
+.flaticon3-calendar-1:before {
+    content: "\f11e";
+}
+.flaticon3-boom-lift:before {
+    content: "\f11f";
+}
+.flaticon3-weight:before {
+    content: "\f120";
+}
+.flaticon3-review:before {
+    content: "\f121";
+}
+.flaticon3-depth:before {
+    content: "\f122";
+}
+.flaticon3-package:before {
+    content: "\f123";
+}
+.flaticon3-whatsapp:before {
+    content: "\f124";
+}
+.flaticon3-whatsapp-1:before {
+    content: "\f125";
+}
+.flaticon3-whatsapp-2:before {
+    content: "\f126";
+}
+.flaticon3-social-media:before {
+    content: "\f127";
+}
+.flaticon3-twitter-1:before {
+    content: "\f128";
+}
+

@@ -1,0 +1,188 @@
+.ova-product-category-wrapper {
+  position: relative;
+}
+.ova-product-category-wrapper.template1:hover .info {
+  transition: all 0.5s ease;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px 0px rgba(12, 13, 12, 0.1);
+  border: 1px solid rgb(208, 215, 222);
+}
+.ova-product-category-wrapper.template1:hover .name {
+  transition: all 0.3s ease;
+  color: var(--heading);
+}
+.ova-product-category-wrapper.template1:hover .count {
+  transition: all 0.3s ease;
+  margin: 0;
+  opacity: 1;
+  color: var(--text);
+}
+.ova-product-category-wrapper.template1:hover .review-average .average {
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+.ova-product-category-wrapper.template1:hover .view-category {
+  transition: all 0.5s ease;
+  bottom: -19px;
+  opacity: 1;
+  visibility: visible;
+}
+.ova-product-category-wrapper.template1 img {
+  width: 100%;
+  height: 100%;
+}
+.ova-product-category-wrapper.template1 .name {
+  font-size: 18px;
+  color: #fff;
+}
+.ova-product-category-wrapper.template1 .count {
+  margin: -14px 0 0 0;
+  opacity: 0;
+  color: #fff;
+}
+.ova-product-category-wrapper.template1 .review-average .average {
+  color: #fff;
+}
+.ova-product-category-wrapper.template2:hover .name {
+  transition: all 0.5s ease;
+  color: var(--primary);
+}
+.ova-product-category-wrapper.template2 .ova-product-category {
+  border: 1px solid rgb(208, 215, 222);
+}
+.ova-product-category-wrapper.template2 .image-wrap:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 57%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(254, 253, 253) 0%, rgba(254, 253, 253, 0) 100%);
+}
+.ova-product-category-wrapper.template2 img {
+  margin-left: auto;
+  height: 100%;
+}
+.ova-product-category-wrapper.template2 .info {
+  align-items: flex-start;
+  padding: 12px 26px 20px 26px;
+}
+.ova-product-category-wrapper .ova-product-category {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ova-product-category-wrapper .image-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 148px;
+}
+.ova-product-category-wrapper img {
+  display: block;
+  width: 57%;
+  min-height: 148px;
+  object-fit: cover;
+  object-position: center;
+}
+.ova-product-category-wrapper .background-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 20, 46, 0.8);
+  z-index: 1;
+}
+.ova-product-category-wrapper .info {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid transparent;
+  padding: 12px 24px 24px 24px;
+  background-color: transparent;
+}
+.ova-product-category-wrapper i {
+  display: inline-flex;
+  font-size: 68px;
+  line-height: 1;
+  color: var(--primary);
+}
+.ova-product-category-wrapper svg {
+  fill: var(--primary);
+  width: 68px;
+  height: auto;
+}
+.ova-product-category-wrapper svg path {
+  fill: var(--primary);
+}
+.ova-product-category-wrapper .name {
+  transition: all 0.3s ease;
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.ova-product-category-wrapper .count {
+  transition: all 0.3s ease;
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text);
+}
+.ova-product-category-wrapper .review-average {
+  display: inline-flex;
+  align-items: center;
+}
+.ova-product-category-wrapper .review-average i {
+  line-height: 1;
+  color: #FFB26A;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.ova-product-category-wrapper .review-average .average {
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+.ova-product-category-wrapper .view-category {
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+.ova-product-category-wrapper .view-category i {
+  display: inline-flex;
+  font-size: 15px;
+  color: #fff;
+}
+
+.rtl .ova-product-category-wrapper.template2 .image-wrap:before {
+  right: unset;
+  left: 0;
+  background: linear-gradient(-90deg, #fefdfd 0%, rgba(254, 253, 253, 0) 100%);
+}
+.rtl .ova-product-category-wrapper.template2 img {
+  margin-right: auto;
+  margin-left: 0;
+}

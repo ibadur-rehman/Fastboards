@@ -1,0 +1,315 @@
+.ova-testimonial-4 .slide-testimonials-4 {
+  fill: #fff;
+  filter: drop-shadow(10px 4px 60px rgba(193, 193, 193, 0.25));
+}
+.ova-testimonial-4 .slide-testimonials-4 .slick-track {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1023px) {
+  .ova-testimonial-4 .slide-testimonials-4 .slick-track {
+    gap: 0;
+  }
+}
+.ova-testimonial-4 .slide-testimonials-4 .item .rating-icon i {
+  font-size: 16px;
+  line-height: 1;
+  color: #fda300;
+  width: fit-content;
+  margin-right: 4px;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item, .ova-testimonial-4.template3 .slide-testimonials-4 .item {
+  padding: 30px 50px 40px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client .image, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image {
+  display: flex;
+  align-items: center;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client .image .profile-image, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image .profile-image {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client .image .icon-quote, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image .icon-quote {
+  width: 55px;
+  height: 55px;
+  aspect-ratio: 1/1;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 55px;
+  z-index: 1;
+  margin-left: -9px;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client .image .icon-quote i, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image .icon-quote i {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client .name-job .name, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .name-job .name {
+  margin: 0;
+  color: var(--heading);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .info, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info {
+  padding-top: 40px;
+  border-top: 1px solid #E6E7EA;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .info .ova-evaluate-title, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info .ova-evaluate-title {
+  margin: 0 0 15px 0;
+  text-align: center;
+  color: var(--heading);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .info .ova-evaluate, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info .ova-evaluate {
+  margin: 0;
+  color: var(--text);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .rating-icon, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .rating-icon {
+  margin-top: 18px;
+  text-align: center;
+}
+@media (max-width: 430px) {
+  .ova-testimonial-4.template1 .slide-testimonials-4 .item, .ova-testimonial-4.template3 .slide-testimonials-4 .item {
+    padding: 20px;
+  }
+  .ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .client, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .ova-testimonial-4.template1 .slide-testimonials-4 .item .client-info .info, .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info {
+    padding-top: 20px;
+  }
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .slick-track {
+  padding-top: 20px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item {
+  box-shadow: 0px 0px 10px 4px rgba(197, 197, 197, 0.15);
+  border-radius: 14px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .client .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .client .image img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% + 20px);
+  bottom: 0;
+  border-radius: 10px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info {
+  padding: 40px 50px 40px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 39px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job .name {
+  margin: 0;
+  color: var(--heading);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job .icon-quote {
+  min-width: 55px;
+  min-height: 55px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 55px;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job .icon-quote i {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .ova-evaluate-title {
+  color: var(--heading);
+  margin: 0 0 15px 0;
+  padding-top: 40px;
+  border-top: 1px solid #E6E7EA;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .ova-evaluate {
+  color: var(--text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin: 0 0 20px 0;
+}
+.ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .rating-icon .rating-title {
+  color: var(--heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 10px;
+}
+@media (max-width: 529px) {
+  .ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+    min-height: auto;
+  }
+  .ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info {
+    padding: 30px 20px;
+  }
+  .ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job {
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  .ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .name-job .icon-quote {
+    width: 45px;
+    height: 45px;
+  }
+  .ova-testimonial-4.template2 .slide-testimonials-4 .item .client-info .info .ova-evaluate-title {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item {
+  padding: 50px 70px 40px;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info {
+  align-items: unset;
+  justify-content: unset;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client {
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image {
+  flex-direction: row-reverse;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image .profile-image {
+  margin-left: -9px;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .image .icon-quote {
+  margin-left: unset;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .name-job .name {
+  font-size: 22px;
+  letter-spacing: -0.44px;
+  margin-bottom: 10px;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client .name-job .job {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info {
+  padding-top: 40px;
+  border-top: 1px solid #E6E7EA;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info .ova-evaluate-title {
+  text-align: unset;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.44px;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info .ova-evaluate {
+  text-align: unset;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .rating-icon {
+  text-align: unset;
+}
+.ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .rating-icon .rating-title {
+  color: var(--heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 10px;
+}
+@media (max-width: 430px) {
+  .ova-testimonial-4.template3 .slide-testimonials-4 .item {
+    padding: 20px;
+  }
+  .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .client {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .ova-testimonial-4.template3 .slide-testimonials-4 .item .client-info .info {
+    padding-top: 20px;
+  }
+}
+.ova-testimonial-4 .slick-dots {
+  position: unset;
+  margin-top: 20px;
+}
+.ova-testimonial-4 .slick-dots li button {
+  transition: all 0.3s ease;
+}
+.ova-testimonial-4 .slick-dots li button::before {
+  opacity: 1;
+  color: var(--secondary);
+  font-size: 5px;
+}
+.ova-testimonial-4 .slick-dots li.slick-active button::before {
+  opacity: 1;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.ova-testimonial-4-full-width .ova-testimonial-4 .slide-testimonials-4 .slick-track {
+  width: 100% !important;
+}
+.ova-testimonial-4-full-width .ova-testimonial-4 .slide-testimonials-4 .slick-track .slick-slide {
+  width: 100% !important;
+}

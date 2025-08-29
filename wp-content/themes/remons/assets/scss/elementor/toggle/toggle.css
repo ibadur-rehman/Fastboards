@@ -1,0 +1,32 @@
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-toggle-title {
+  display: flex;
+  padding-right: 5px;
+}
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon i {
+  line-height: 26px;
+}
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title {
+  position: relative;
+}
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 24px;
+  top: 50%;
+  left: -12px;
+  margin-top: -12px;
+  background-color: var(--secondary);
+}
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #E9E9E9;
+  border-radius: 2px;
+}
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon i {
+  vertical-align: middle;
+}

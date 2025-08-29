@@ -1,0 +1,59 @@
+.ova-icon-slider {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary);
+    height: 80px;
+    padding: 0 120px;
+
+    @media (max-width: 1024px) {
+        padding: 0;
+    }
+
+    .icon-slider {
+        &.owl-carousel {
+            .owl-stage {
+                display: flex;
+                align-items: center;
+                gap: 70px;
+            }
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center !important;
+            &.icon-item {
+                a {
+                    display: inline-flex;
+                    align-items: center; 
+                    gap: 12px;
+
+                    .icon {
+                        i {
+                            font-size: 30px;
+                            color: var(--White, #FFF);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            fill: var(--White, #FFF);
+                         }
+                    }  
+
+                    .title {
+                        margin: 0;
+                        color: #FFF;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -0.48px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

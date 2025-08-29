@@ -1,0 +1,49 @@
+.ova-icon-slider {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  height: 80px;
+  padding: 0 120px;
+}
+@media (max-width: 1024px) {
+  .ova-icon-slider {
+    padding: 0;
+  }
+}
+.ova-icon-slider .icon-slider.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.ova-icon-slider .icon-slider .item {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
+.ova-icon-slider .icon-slider .item.icon-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.ova-icon-slider .icon-slider .item.icon-item a .icon i {
+  font-size: 30px;
+  color: var(--White, #FFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ova-icon-slider .icon-slider .item.icon-item a .icon svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--White, #FFF);
+}
+.ova-icon-slider .icon-slider .item.icon-item a .title {
+  margin: 0;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  white-space: nowrap;
+}

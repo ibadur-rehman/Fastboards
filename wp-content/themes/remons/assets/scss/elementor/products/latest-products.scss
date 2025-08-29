@@ -1,0 +1,64 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ){
+	transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+
+.ova-latest-products{
+    .item{
+    	@include transaction( all, 0.3s, ease);
+    	display: flex;
+    	align-items: center;
+    	gap: 15px;
+	    margin-bottom: 15px;  
+	    &:last-child {
+	    	margin-bottom: 0;
+	    }
+
+    	.media{
+    		gap: 15px;
+    		a{
+    			display: flex;
+				position: relative;
+    			overflow: hidden;
+    			height: 100%;
+    			padding: 0!important;
+    			img{
+    				width: 70px;
+    				min-width: 70px;
+    				min-height: 70px;
+    				max-height: 120px;
+				    height: 100%;
+				    object-fit: cover;
+				    object-position: center;
+    			}
+    		}
+    	}
+
+    	.info{
+			display: flex;
+			flex-flow: column;
+			a {
+				padding: 0!important;
+				&:hover {
+					.title {
+						color: var(--primary);
+					}
+				}
+			}
+    		.title{
+    			margin: 3px 0 6px 0;
+    			font-size: 16px;
+    			line-height: 1.2;
+    		}
+    		.ovabrw-price {
+    			font-size: 14px;
+    			line-height: 1.2;
+    			font-weight: 500;
+    			color: var(--primary);
+    		}
+    	}
+    }
+}

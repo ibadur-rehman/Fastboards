@@ -1,0 +1,122 @@
+.ova-offer .offer-img {
+  position: relative;
+}
+.ova-offer .offer-img:hover .info {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+}
+.ova-offer .offer-img:hover .info.info-hidden {
+  visibility: visible;
+  opacity: 1;
+  bottom: 28px;
+}
+.ova-offer .offer-img img {
+  height: 422px;
+  object-fit: cover;
+}
+.ova-offer .offer-img .info {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: absolute;
+  bottom: 28px;
+  left: 30px;
+  width: calc(100% - 60px);
+  padding: 0 16px 22px 16px;
+  background-color: #fff;
+  border-top: 3px solid var(--heading);
+}
+.ova-offer .offer-img .info.info-hidden {
+  visibility: hidden;
+  opacity: 0;
+  bottom: 0;
+}
+.ova-offer .offer-img .info .top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+.ova-offer .offer-img .info .icon {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  margin: 0 -16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  background-color: var(--heading);
+  cursor: pointer;
+}
+.ova-offer .offer-img .info .icon:hover {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  background-color: var(--primary);
+}
+.ova-offer .offer-img .info i {
+  display: inline-flex;
+  font-size: 20px;
+  color: #fff;
+}
+.ova-offer .offer-img .info svg {
+  display: inline-flex;
+  width: 20px;
+  fill: #fff;
+}
+.ova-offer .offer-img .info .title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ova-offer .offer-img .info .title:hover {
+  color: var(--primary);
+}
+.ova-offer .offer-img .info .description {
+  margin: 20px 0 0 0;
+}
+.ova-offer.template2 .offer-img .info {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+  visibility: hidden;
+  opacity: 0;
+}
+.ova-offer.template2 .offer-img .info.info-hidden {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+.ova-offer.template2 .offer-img .info .top-info {
+  align-items: center;
+}
+.ova-offer .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.ova-offer .owl-dots .owl-dot {
+  outline: none;
+}
+.ova-offer .owl-dots .owl-dot span {
+  transition: opacity 0.2s ease;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  background: #D0D7DE;
+  border-radius: 50%;
+  -webkit-backface-visibility: visible;
+}
+.ova-offer .owl-dots .owl-dot.active span {
+  background: var(--primary);
+}

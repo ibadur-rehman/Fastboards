@@ -1,0 +1,139 @@
+.ova-offer {
+	.offer-img {
+        position: relative;
+
+        &:hover {
+           .info {
+	           	transition: all .3s ease;  
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				visibility: hidden;
+				opacity: 0;
+				bottom: 0;
+				&.info-hidden {
+					visibility: visible;
+					opacity: 1;
+					bottom: 28px;
+				}
+           }
+        }
+
+        img {
+			height: 422px;
+			object-fit: cover;
+		}
+
+		.info {
+			transition: all .3s ease;  
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			position: absolute;
+			bottom: 28px;
+			left: 30px;
+			width: calc(100% - 60px);
+			padding: 0 16px 22px 16px;
+			background-color: #fff;
+			border-top: 3px solid var(--heading);
+			&.info-hidden {
+				visibility: hidden;
+				opacity: 0;
+				bottom: 0;
+			}
+
+			.top-info {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				gap: 10px;
+			}
+			.icon {
+				transition: all .3s ease;  
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				margin: 0 -16px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				min-width: 50px;
+				height: 50px;
+				background-color: var(--heading);
+				cursor: pointer;
+				&:hover {
+					transition: all .3s ease;  
+					-moz-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					background-color: var(--primary);
+				}
+			}
+			i {
+				display: inline-flex;
+				font-size: 20px; 
+				color: #fff;
+			}
+			svg {
+				display: inline-flex;
+				width: 20px; 
+				fill: #fff;
+			}
+			.title {
+				margin: 0; 
+				font-size: 18px; 
+				line-height: 1.2;
+				font-weight: 600; 
+				cursor: pointer;
+				&:hover {
+					color: var(--primary);
+				}
+			}
+			.description {
+				margin: 20px 0 0 0;
+			}
+		}
+
+	}
+
+	&.template2 {
+		.offer-img {
+			.info {
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding: 0 16px;
+				visibility: hidden;
+				opacity: 0;
+				&.info-hidden {
+					visibility: visible;
+					opacity: 1;
+					bottom: 0;
+				}
+				.top-info {
+					align-items: center; 
+				}
+			}
+		}
+	}
+
+	.owl-dots{
+		text-align: center;
+		margin-top: 30px;
+		.owl-dot{
+			outline: none;
+			span{
+				transition: opacity .2s ease;
+				display: block;
+				width: 8px;
+				height: 8px;
+				margin: 3px;
+				background: #D0D7DE;
+				border-radius: 50%;
+				-webkit-backface-visibility: visible;	
+			}
+			&.active{
+				span{
+					background: var(--primary);
+				}
+			}
+		}
+	}
+}

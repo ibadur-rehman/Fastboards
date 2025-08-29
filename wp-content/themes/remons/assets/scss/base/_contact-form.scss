@@ -1,0 +1,216 @@
+// General Output Message
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output
+,.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output {
+	border-color: red;
+	color: red;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: green;
+    color: #fff;
+}
+.ova-response-output-black {
+	.wpcf7 form.sent .wpcf7-response-output {
+	    color: var(--heading);
+	}
+}
+
+// General Ova Contact Form
+.ova-ctform {
+	position: relative;
+	p {
+		margin: 0;
+	}
+	.two_column {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+
+		@media screen and ( max-width: 600px ) {
+			grid-template-columns: 1fr;
+		}
+	}
+	.ova_wrap_input {
+		margin-bottom: 20px;
+		label {
+			font-family: var(--secondary-font);
+			font-weight: 500;
+			color: var(--heading);
+		}
+	}
+	input, textarea, select:not([size]):not([multiple]) {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--heading);
+		width: 100%;
+		border: none;
+		background: #ecf0f4;
+		&::placeholder {
+			font-weight: var(--font-weight);
+			color: var(--text);
+			opacity: 1;
+		}
+		&:focus {
+			border-color: var(--primary);
+		}
+	}
+
+	input {
+		padding: 20px 30px;
+	}
+
+	textarea {
+		padding: 30px;
+		height: 140px;
+	}
+
+	.wpcf7-submit {
+		font-weight: 700;
+		padding: 20px 40px;
+		&:hover {
+			color: var(--primary);
+		}
+	}
+	.wpcf7-spinner {
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+	}
+
+	&.ctform-template2 {
+		.ova_wrap_input {
+			margin-bottom: 25px;
+		}
+		input, textarea, select:not([size]):not([multiple]) {
+			font-size: 18px;
+			font-weight: 500;
+			border-bottom: 1px solid rgb(92, 92, 91,0.3);
+			background: transparent;
+			border-radius: 0;
+			&:focus {
+				border-color: var(--primary);
+			}
+		}
+		input {
+			padding: 20px 0;
+		}
+		textarea {
+			padding: 20px 0;
+			height: 180px;
+		}
+		.wpcf7-submit {
+			margin-top: 25px; 
+			border-radius: 8px;
+			color: var(--heading);
+			&:hover {
+				color: var(--primary);
+			}
+		}
+	}
+}
+
+// General Ova Contact Form medical
+.ova-ctform.ova-contact-form.medical {
+	background-color: #fff;
+
+	.form-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		margin-bottom: 5px;
+
+		&.two_column .ova_wrap_input {
+			flex: 1 1 0;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.form-row {
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.form-row.two_column .ova_wrap_input {
+			flex: 1 1 100%;
+		}
+	}
+
+	.ova_wrap_input {
+		display: flex;
+		flex-direction: column;
+
+		label {
+			color: var(--heading);
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+
+		input,
+		select,
+		textarea {
+			width: 100%;
+			padding: 15px 25px;
+			border: 1px solid #E6E7EA;
+			border-radius: 14px;
+			background-color: #FFFFFF;
+			font-size: 16px;
+			font-weight: 400;
+			transition: border-color 0.3s ease;
+			margin-top: 5px;
+
+			&:focus {
+				background-color: #F3F4F6;
+				border-color: var(--heading);
+				outline: none;
+			}
+
+			&::placeholder {
+				color: #B6B6B6;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+		select {
+			appearance: none;
+			background-image: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.12 9.29L12 13.17L15.88 9.29C16.27 8.9 16.9 8.9 17.29 9.29C17.68 9.68 17.68 10.31 17.29 10.7L12.7 15.29C12.31 15.68 11.68 15.68 11.29 15.29L6.7 10.7C6.31 10.31 6.31 9.68 6.7 9.29C7.09 8.9 7.72 8.9 8.12 9.29Z' fill='%23777'/></svg>");
+			background-repeat: no-repeat;
+			background-position: right 16px center;
+			background-size: 16px;
+		}
+
+		textarea {
+			resize: vertical;
+			min-height: 168px;
+		}
+	}
+
+	input[type="submit"].btn-primary,
+	.wpcf7-submit.btn-primary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 3px;
+		width: 100%;
+		background-color: var(--primary);
+		color: #fff;
+		border: none;
+		padding: 15px 30px;
+		font-size: 16px;
+		font-weight: 500;
+		border-radius: 14px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		i {
+			color: #FFF;
+			font-size: 13px;
+		}
+
+		&:hover {
+			background-color: var(--secondary);
+		}
+	}
+}

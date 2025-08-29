@@ -1,0 +1,79 @@
+body{
+	&.woocommerce{
+
+		&.woo_layout_1c{
+			#woo_main{
+				max-width: 100%;
+				#primary{
+					flex: 0 0 100%;
+				}
+			}
+		}
+
+		&.woo_layout_2l{
+			#woo_main{
+				float: right;
+			}
+			#woo_sidebar{
+				float: left;
+			}
+		}
+		
+		&.woo_layout_2r{
+			#woo_main{
+				float: left;
+			}
+			#woo_sidebar{
+				float: right;
+			}
+		}
+
+		#woo_main{
+            max-width: calc( var(--woo-main-content) - 30px );
+            width: 100%;
+            @media( max-width: $desktop - 1 ){
+            	max-width: 100%;
+            }
+        }
+		#woo_sidebar{
+	        max-width: var(--woo-width-sidebar);
+	        width: 100%;
+	        margin-bottom: 60px;
+	        @media( max-width: $desktop - 1 ){
+            	max-width: 100%;
+            }
+	    }
+
+	}
+
+	/* Multi currency woo plugin */
+	.woo-multi-currency.wmc-shortcode {
+		&.layout9 {
+			.wmc-currency {
+				padding: 2px 0;
+			}
+		}
+		.wmc-currency {
+			background-color: transparent;
+			select.wmc-nav {
+				border: none;
+				color: var(--heading);
+				background-color: transparent;
+				padding: 5px 27px;
+			}
+		}
+	} 
+	.ova_white_currency {
+		.woo-multi-currency.wmc-shortcode {
+			.wmc-currency {
+				select.wmc-nav {
+					color: #fff;
+					background-image: url("./assets/img/base/select-arrow-white.svg");
+					option {
+						background-color: var(--heading);
+					}
+				}
+			}
+		} 
+	}
+}

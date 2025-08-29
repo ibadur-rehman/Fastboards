@@ -1,0 +1,56 @@
+.ovabrw-product-slider .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+.ovabrw-product-slider .owl-dots button.active span {
+  background-color: var(--ovabrw-primary-color);
+}
+.ovabrw-product-slider .owl-dots button span {
+  transition: all 0.3s ease;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #F0F0F0;
+}
+.ovabrw-product-slider .owl-dots button span:hover {
+  background-color: var(--ovabrw-primary-color);
+}
+.ovabrw-product-slider .owl-dots button:not(:last-child) {
+  margin-right: 3px;
+}
+.ovabrw-product-slider .owl-dots.disabled {
+  display: none;
+}
+
+.elementor-widget-container #ova-product-slider-control button {
+  transition: all 0.3s ease;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #D0D7DE;
+  border-radius: 50%;
+  border: none;
+}
+.elementor-widget-container #ova-product-slider-control button.owl-prev {
+  margin-right: 10px;
+}
+.elementor-widget-container #ova-product-slider-control button i {
+  display: inline-flex;
+  color: var(--text);
+}
+.elementor-widget-container #ova-product-slider-control button:hover {
+  transition: all 0.3s ease;
+}
+.elementor-widget-container #ova-product-slider-control button:hover i {
+  transition: all 0.3s ease;
+  color: var(--primary);
+}
+
+.rtl .elementor-widget-container #ova-product-slider-control button.owl-prev {
+  margin-right: 0;
+  margin-left: 10px;
+}

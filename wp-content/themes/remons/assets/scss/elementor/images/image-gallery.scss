@@ -1,0 +1,77 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ){
+	transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+
+.ova-image-gallery{
+
+	.ova-image-gallery-ft{
+		display: inline-grid;
+		gap:10px;
+
+		&.two_column{
+			grid-template-columns: 1fr 1fr ;
+		}
+		&.three_column{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		&.four_column{
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+		.item-fancybox-ft{
+			display: inline-flex;
+			position: relative;
+
+			img{
+				width: 100%;
+				height: 100%;
+				min-width: 60px;
+				min-height: 60px;
+				border-radius: 10px;
+				overflow: hidden;
+				object-fit: cover;
+			}
+
+			.overlay {
+				@include transaction( all, 0.3s, linear );
+				width: 100%;
+				height: 100%;
+				background-color: var(--primary);
+				border-radius: 10px;
+				position: absolute;
+				opacity: 0;
+				
+				.icon {
+					display: inline-flex;
+					position: absolute;
+					color: #fff;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+
+					i {
+						display: inherit;
+						font-size: 20px;
+					}
+					svg {
+						display: inherit;
+						width: 20px;
+						fill: #fff;
+					}
+				}
+			}
+			&:hover {
+				cursor: pointer;
+
+				.overlay {
+					@include transaction( all, 0.3s, linear );
+					opacity: 0.85;
+				}
+			}
+		}
+	}
+}

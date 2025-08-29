@@ -1,0 +1,132 @@
+.ova-booking-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 15px 30px;
+  border-radius: 14px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.ova-booking-button .text-button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ova-booking-button i {
+  display: flex;
+  font-size: 16px;
+}
+.ova-booking-button svg {
+  width: 16px;
+  fill: #fff;
+  transition: all 0.5s ease;
+}
+.ova-booking-button:hover {
+  background-color: var(--secondary);
+}
+.ova-booking-button .remons-loader {
+  display: none;
+}
+.ova-booking-button .remons-loader.active {
+  display: inline-block;
+}
+.ova-booking-button .remons-loader i {
+  font-size: 16px;
+  color: #fff;
+  animation: spin 1s linear infinite;
+}
+.ova-booking-button.loading .remons-loader {
+  display: inline-block;
+}
+.ova-booking-button.loading > i,
+.ova-booking-button.loading > svg {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.open-popup-btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.popup-booking {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+.popup-booking.active {
+  display: block;
+}
+.popup-booking .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.popup-booking .remons-custom-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-height: 90vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.popup-booking .remons-custom-popup::-webkit-scrollbar {
+  display: none;
+}
+.popup-booking .remons-custom-popup .scroll-area {
+  position: relative;
+  flex: 1;
+  border-radius: 10px;
+}
+.popup-booking .remons-custom-popup .product-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+.popup-booking .remons-custom-popup .close-popup-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999999;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(200, 200, 200, 0.7294117647);
+  color: black;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+@media (max-width: 520px) {
+  .popup-booking .remons-custom-popup {
+    width: 96%;
+    padding: 20px;
+  }
+}

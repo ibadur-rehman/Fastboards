@@ -1,0 +1,269 @@
+.ova-product-category-grid {
+  display: grid;
+  grid-gap: 30px;
+}
+.ova-product-category-grid.two_column {
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 767px) {
+  .ova-product-category-grid.two_column {
+    grid-template-columns: auto;
+  }
+}
+.ova-product-category-grid.three_column {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1024px) {
+  .ova-product-category-grid.three_column {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .ova-product-category-grid.three_column {
+    grid-template-columns: auto;
+  }
+}
+.ova-product-category-grid.four_column {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1200px) {
+  .ova-product-category-grid.four_column {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  .ova-product-category-grid.four_column {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .ova-product-category-grid.four_column {
+    grid-template-columns: auto;
+  }
+}
+.ova-product-category-grid.template1 .item-category-grid:hover .info {
+  transition: all 0.3s ease;
+}
+.ova-product-category-grid.template1 .item-category-grid:hover .info .name {
+  transition: all 0.3s ease;
+  margin-bottom: 66px;
+}
+.ova-product-category-grid.template1 .item-category-grid:hover .top {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+.ova-product-category-grid.template1 .item-category-grid:hover .view-category {
+  bottom: 24px;
+}
+.ova-product-category-grid.template1 .item-category-grid .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+.ova-product-category-grid.template1 .item-category-grid .top {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.ova-product-category-grid.template1 .item-category-grid .view-category {
+  left: 24px;
+  bottom: 0;
+  right: 24px;
+}
+.ova-product-category-grid.template2 .item-category-grid {
+  border-radius: 10px;
+  padding: 30px 15px;
+  height: 327px;
+  background-color: #f4f4f4;
+}
+.ova-product-category-grid.template2 .item-category-grid:before {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -1;
+}
+.ova-product-category-grid.template2 .item-category-grid:hover:before {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.ova-product-category-grid.template2 .item-category-grid:hover .view-category {
+  top: 24px;
+}
+.ova-product-category-grid.template2 .item-category-grid .image-wrap {
+  height: 200px;
+}
+.ova-product-category-grid.template2 .item-category-grid img {
+  width: auto;
+  height: auto;
+  max-height: 200px;
+  min-height: 150px;
+  object-fit: contain;
+}
+.ova-product-category-grid.template2 .item-category-grid .background-overlay {
+  background-color: transparent;
+}
+.ova-product-category-grid.template2 .item-category-grid .info {
+  padding: 0;
+}
+.ova-product-category-grid.template2 .item-category-grid .name {
+  font-size: 18px;
+  color: var(--heading);
+}
+.ova-product-category-grid.template2 .item-category-grid .top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ova-product-category-grid.template2 .item-category-grid .count {
+  color: var(--text);
+}
+.ova-product-category-grid.template2 .item-category-grid .review-average .average {
+  color: var(--text);
+}
+.ova-product-category-grid.template2 .item-category-grid .view-category {
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary);
+}
+.ova-product-category-grid .item-category-grid {
+  transition: all 0.3s ease;
+  position: relative;
+  height: 400px;
+}
+@media (max-width: 1024px) {
+  .ova-product-category-grid .item-category-grid {
+    height: 330px;
+  }
+}
+.ova-product-category-grid .item-category-grid:hover {
+  transition: all 0.3s ease;
+}
+.ova-product-category-grid .item-category-grid:hover .background-overlay {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.ova-product-category-grid .item-category-grid:hover .view-category {
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+.ova-product-category-grid .item-category-grid .image-wrap {
+  height: 100%;
+}
+.ova-product-category-grid .item-category-grid img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.ova-product-category-grid .item-category-grid .background-overlay {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--heading);
+  opacity: 0.15;
+  z-index: 1;
+}
+.ova-product-category-grid .item-category-grid .info {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+}
+.ova-product-category-grid .item-category-grid .name {
+  transition: all 0.3s ease;
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #fff;
+}
+.ova-product-category-grid .item-category-grid .count {
+  transition: all 0.3s ease;
+  display: block;
+  line-height: 1;
+  color: #fff;
+}
+.ova-product-category-grid .item-category-grid .review-average {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.ova-product-category-grid .item-category-grid .review-average i {
+  line-height: 1;
+  color: #FFB26A;
+  font-size: 18px;
+}
+.ova-product-category-grid .item-category-grid .review-average .average {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.ova-product-category-grid .item-category-grid .view-category {
+  transition: all 0.3s ease;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading);
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  z-index: 2;
+}
+.ova-product-category-grid .item-category-grid .view-category i {
+  display: inline-flex;
+}
+.ova-product-category-grid .item-category-grid .view-category svg {
+  display: inline-flex;
+  width: 16px;
+  fill: var(--heading);
+  transition: all 0.3s ease;
+}
+.ova-product-category-grid .item-category-grid .view-category:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: var(--secondary);
+}
+.ova-product-category-grid .item-category-grid .view-category:hover svg {
+  fill: #fff;
+}

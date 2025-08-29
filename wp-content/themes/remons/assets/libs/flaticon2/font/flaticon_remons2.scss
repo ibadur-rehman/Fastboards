@@ -1,0 +1,189 @@
+$flaticon_remons2-font: "flaticon_remons2";
+
+@font-face {
+    font-family: $flaticon_remons2-font;
+    src: url("./flaticon_remons2.woff2?bf9876f1734456e124ab3c3d94aa18fc") format("woff2"),
+url("./flaticon_remons2.woff?bf9876f1734456e124ab3c3d94aa18fc") format("woff"),
+url("./flaticon_remons2.eot?bf9876f1734456e124ab3c3d94aa18fc#iefix") format("embedded-opentype"),
+url("./flaticon_remons2.ttf?bf9876f1734456e124ab3c3d94aa18fc") format("truetype"),
+url("./flaticon_remons2.svg?bf9876f1734456e124ab3c3d94aa18fc#flaticon_remons2") format("svg");
+}
+
+i[class^="flaticon2-"]:before, i[class*=" flaticon2-"]:before {
+    font-family: flaticon_remons2 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_remons2-map: (
+    "car-engine": "\f101",
+    "car": "\f102",
+    "play": "\f103",
+    "sedan": "\f104",
+    "car-1": "\f105",
+    "car-door": "\f106",
+    "right-arrow": "\f107",
+    "baby-car-seat": "\f108",
+    "seat": "\f109",
+    "seat-belt": "\f10a",
+    "seat-1": "\f10b",
+    "baby-car-seat-1": "\f10c",
+    "car-wash": "\f10d",
+    "car-wash-1": "\f10e",
+    "tire": "\f10f",
+    "left-arrow": "\f110",
+    "customer-support": "\f111",
+    "precision": "\f112",
+    "precision-1": "\f113",
+    "repair": "\f114",
+    "customer-service": "\f115",
+    "shield": "\f116",
+    "delivery": "\f117",
+    "enter": "\f118",
+    "login": "\f119",
+    "logistics": "\f11a",
+    "check-mark": "\f11b",
+    "review": "\f11c",
+    "darts": "\f11d",
+    "review-1": "\f11e",
+    "targeting": "\f11f",
+    "plus": "\f120",
+    "remove": "\f121",
+    "email": "\f122",
+    "map": "\f123",
+    "group": "\f124",
+    "rating": "\f125",
+    "group-1": "\f126",
+    "tools": "\f127",
+    "customer": "\f128",
+    "up-loading": "\f129",
+);
+
+.flaticon2-car-engine:before {
+    content: map-get($flaticon_remons2-map, "car-engine");
+}
+.flaticon2-car:before {
+    content: map-get($flaticon_remons2-map, "car");
+}
+.flaticon2-play:before {
+    content: map-get($flaticon_remons2-map, "play");
+}
+.flaticon2-sedan:before {
+    content: map-get($flaticon_remons2-map, "sedan");
+}
+.flaticon2-car-1:before {
+    content: map-get($flaticon_remons2-map, "car-1");
+}
+.flaticon2-car-door:before {
+    content: map-get($flaticon_remons2-map, "car-door");
+}
+.flaticon2-right-arrow:before {
+    content: map-get($flaticon_remons2-map, "right-arrow");
+}
+.flaticon2-baby-car-seat:before {
+    content: map-get($flaticon_remons2-map, "baby-car-seat");
+}
+.flaticon2-seat:before {
+    content: map-get($flaticon_remons2-map, "seat");
+}
+.flaticon2-seat-belt:before {
+    content: map-get($flaticon_remons2-map, "seat-belt");
+}
+.flaticon2-seat-1:before {
+    content: map-get($flaticon_remons2-map, "seat-1");
+}
+.flaticon2-baby-car-seat-1:before {
+    content: map-get($flaticon_remons2-map, "baby-car-seat-1");
+}
+.flaticon2-car-wash:before {
+    content: map-get($flaticon_remons2-map, "car-wash");
+}
+.flaticon2-car-wash-1:before {
+    content: map-get($flaticon_remons2-map, "car-wash-1");
+}
+.flaticon2-tire:before {
+    content: map-get($flaticon_remons2-map, "tire");
+}
+.flaticon2-left-arrow:before {
+    content: map-get($flaticon_remons2-map, "left-arrow");
+}
+.flaticon2-customer-support:before {
+    content: map-get($flaticon_remons2-map, "customer-support");
+}
+.flaticon2-precision:before {
+    content: map-get($flaticon_remons2-map, "precision");
+}
+.flaticon2-precision-1:before {
+    content: map-get($flaticon_remons2-map, "precision-1");
+}
+.flaticon2-repair:before {
+    content: map-get($flaticon_remons2-map, "repair");
+}
+.flaticon2-customer-service:before {
+    content: map-get($flaticon_remons2-map, "customer-service");
+}
+.flaticon2-shield:before {
+    content: map-get($flaticon_remons2-map, "shield");
+}
+.flaticon2-delivery:before {
+    content: map-get($flaticon_remons2-map, "delivery");
+}
+.flaticon2-enter:before {
+    content: map-get($flaticon_remons2-map, "enter");
+}
+.flaticon2-login:before {
+    content: map-get($flaticon_remons2-map, "login");
+}
+.flaticon2-logistics:before {
+    content: map-get($flaticon_remons2-map, "logistics");
+}
+.flaticon2-check-mark:before {
+    content: map-get($flaticon_remons2-map, "check-mark");
+}
+.flaticon2-review:before {
+    content: map-get($flaticon_remons2-map, "review");
+}
+.flaticon2-darts:before {
+    content: map-get($flaticon_remons2-map, "darts");
+}
+.flaticon2-review-1:before {
+    content: map-get($flaticon_remons2-map, "review-1");
+}
+.flaticon2-targeting:before {
+    content: map-get($flaticon_remons2-map, "targeting");
+}
+.flaticon2-plus:before {
+    content: map-get($flaticon_remons2-map, "plus");
+}
+.flaticon2-remove:before {
+    content: map-get($flaticon_remons2-map, "remove");
+}
+.flaticon2-email:before {
+    content: map-get($flaticon_remons2-map, "email");
+}
+.flaticon2-map:before {
+    content: map-get($flaticon_remons2-map, "map");
+}
+.flaticon2-group:before {
+    content: map-get($flaticon_remons2-map, "group");
+}
+.flaticon2-rating:before {
+    content: map-get($flaticon_remons2-map, "rating");
+}
+.flaticon2-group-1:before {
+    content: map-get($flaticon_remons2-map, "group-1");
+}
+.flaticon2-tools:before {
+    content: map-get($flaticon_remons2-map, "tools");
+}
+.flaticon2-customer:before {
+    content: map-get($flaticon_remons2-map, "customer");
+}
+.flaticon2-up-loading:before {
+    content: map-get($flaticon_remons2-map, "up-loading");
+}

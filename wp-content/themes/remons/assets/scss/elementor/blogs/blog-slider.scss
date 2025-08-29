@@ -1,0 +1,79 @@
+.ova-blog-slider {
+
+	// template1
+    &.blog-template1 {
+        &.template_style2 {
+            .item {
+                &:hover{
+                    .content {
+                        .read-more {
+                           	background-color: transparent;
+                           	i {
+                           		color: var(--heading);
+                           	}
+                        }
+                    }
+                }
+                .media {
+                    .box-img {
+                        img {
+                       		height: 390px;
+                        }
+                    }
+                    .post-category {
+                        bottom: 110px;
+                    }
+                }
+                .content {
+                	margin: -90px auto 0 auto;
+                	width: calc(100% - 40px);
+                    .post-meta {
+                    }
+                    .item-meta {
+                       
+                    } 
+                    .post-title {
+                        
+                    }
+                    .read-more {
+                    	padding: 0;
+                    	background-color: transparent;
+                        justify-content: flex-start;
+                        font-size: 15px;
+                        text-transform: capitalize;
+                        width: auto;
+                        i {
+                        	color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.owl-carousel{
+		.owl-dots{
+			text-align: center;
+			margin-top: 30px;
+			.owl-dot{
+				outline: none;
+				span{
+					transition: opacity .2s ease;
+					display: block;
+					width: 8px;
+					height: 8px;
+					margin: 3px;
+					background: #D0D7DE;
+					border-radius: 50%;
+					-webkit-backface-visibility: visible;	
+				}
+				&.active{
+					span{
+						background: var(--primary);
+					}
+				}
+			}
+		}
+	}
+
+}

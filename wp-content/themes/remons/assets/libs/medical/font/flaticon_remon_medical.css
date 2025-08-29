@@ -1,0 +1,107 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_remon_medical";
+    src: url("./flaticon_remon_medical.woff2?65be32c0cb7c653b1e77e9796967d5c1") format("woff2"),
+url("./flaticon_remon_medical.woff?65be32c0cb7c653b1e77e9796967d5c1") format("woff"),
+url("./flaticon_remon_medical.eot?65be32c0cb7c653b1e77e9796967d5c1#iefix") format("embedded-opentype"),
+url("./flaticon_remon_medical.ttf?65be32c0cb7c653b1e77e9796967d5c1") format("truetype"),
+url("./flaticon_remon_medical.svg?65be32c0cb7c653b1e77e9796967d5c1#flaticon_remon_medical") format("svg")
+}
+
+i[class^="flaticon4-"]:before, i[class*=" flaticon4-"]:before {
+    font-family: flaticon_remon_medical !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon4-medical-symbol:before {
+    content: "\f101";
+}
+.flaticon4-search:before {
+    content: "\f102";
+}
+.flaticon4-calendar:before {
+    content: "\f103";
+}
+.flaticon4-medicine:before {
+    content: "\f104";
+}
+.flaticon4-injection:before {
+    content: "\f105";
+}
+.flaticon4-blood-test:before {
+    content: "\f106";
+}
+.flaticon4-test:before {
+    content: "\f107";
+}
+.flaticon4-x-rays:before {
+    content: "\f108";
+}
+.flaticon4-mri:before {
+    content: "\f109";
+}
+.flaticon4-x-ray:before {
+    content: "\f10a";
+}
+.flaticon4-ecg-machine:before {
+    content: "\f10b";
+}
+.flaticon4-cbc:before {
+    content: "\f10c";
+}
+.flaticon4-medical-team:before {
+    content: "\f10d";
+}
+.flaticon4-medical-symbol-1:before {
+    content: "\f10e";
+}
+.flaticon4-phone:before {
+    content: "\f10f";
+}
+.flaticon4-schedule:before {
+    content: "\f110";
+}
+.flaticon4-microscope:before {
+    content: "\f111";
+}
+.flaticon4-hospital:before {
+    content: "\f112";
+}
+.flaticon4-community:before {
+    content: "\f113";
+}
+.flaticon4-doctors-office:before {
+    content: "\f114";
+}
+.flaticon4-stethoscope:before {
+    content: "\f115";
+}
+.flaticon4-blood-test-1:before {
+    content: "\f116";
+}
+.flaticon4-health-insurance:before {
+    content: "\f117";
+}
+.flaticon4-forensic-science:before {
+    content: "\f118";
+}
+.flaticon4-dental-care:before {
+    content: "\f119";
+}
+

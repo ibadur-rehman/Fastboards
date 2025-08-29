@@ -1,0 +1,699 @@
+.ovabrw-modern-product {
+	background-color: transparent;
+
+	.ovabrw-product-title {
+		margin: 0;
+	}
+
+	.ovabrw-product-review {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		.ovabrw-star-rating {
+			display: flex;
+			align-items: center;
+			margin-right: 8px;
+		    overflow: hidden;
+		    position: relative;
+		    line-height: 1;
+		    width: 85px;
+		    max-width: 85px;
+		    height: 1.2em;
+
+			i {
+				font-size: 16px;
+				color: var(--ovabrw-light-color);
+
+				&:not(:last-child) {
+					margin-right: 1px;
+				}
+			}
+
+			.ovabrw-rating-percent {
+				overflow: hidden;
+			    top: 0;
+			    left: 0;
+			    position: absolute;
+			    display: flex;
+				align-items: center;
+				line-height: 1;
+			    height: 1.2em;
+
+				i {
+					font-size: 16px;
+					color: #ffa128;
+					&:not(:last-child) {
+						margin-right: 1px;
+					}
+				}
+			}
+		}
+	}
+
+	.ovabrw-product-price {
+		.amount {
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 600;
+			color: var(--secondary);
+		}
+
+		.unit {
+			display: inline-block;
+			font-size: 18px;
+			font-weight: var(--font-weight);
+		}
+	}
+
+	.ovabrw-product-images {
+		.featured-img {
+			position: relative;
+			a {
+				border-radius: 10px 10px 0 0;
+				img {
+					height: auto;
+					min-height: 240px;
+					max-height: 520px;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			overflow: hidden;
+
+			img {
+				transition: transform 0.5s ease-out;
+				display: block;
+				width: 100%;
+				height: 180px;
+				object-fit: cover;
+			}
+		}
+
+		.gallery {
+			margin: 25px 0 0 0;
+			width: 100%;
+		}
+
+		.data-gallery {
+			display: none;
+		}
+	}
+
+	.ovabrw-product-video-link {
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		z-index: 2;
+		border-radius: 50%;
+		font-size: 11px;
+		color: #FFF;
+		background-color: var(--ovabrw-primary-color);
+		cursor: pointer;
+		&:hover {
+			background-color: var(--ovabrw-primary-color);
+		}
+	}
+
+	.ovabrw-product-features-is-featured{
+		position: absolute;
+		top: unset;
+		bottom: -15px;
+		right: 25px;
+		background-color: var(--secondary);
+		border-radius: 10px;
+	}
+
+	.ovabrw-product-is-featured {
+		position: absolute;
+		top: 20px;
+		left: 25px;
+		z-index: 1;
+		display: block;
+		font-family: var(--ovabrw-primary-font);
+		font-size: 12px;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+		padding: 8px 14px;
+		border-radius: 10px;
+		color: #FFF;
+		background-color: var(--ovabrw-primary-color);
+	}
+
+	.ovabrw-product-table-price {
+		margin-bottom: 25px;
+
+		.title {
+			text-transform: none;
+		}
+
+		.ovabrw-label {
+			font-size: var(--ovabrw-second-heading-size);
+			font-weight: var(--ovabrw-second-heading-weight);
+			.label-note {
+				font-size: var(--ovabrw-second-heading-size);
+				font-weight: var(--ovabrw-text-weight);
+				color: var(--ovabrw-text-color);
+			}
+		}
+
+		.ovabrw-table {
+			width: 100%;
+			max-width: 100%;
+
+			thead {
+				th {
+					background-color: #f2f6f9;
+					padding: 6px 15px;
+					text-align: left;
+
+					&:last-child {
+						text-align: right;
+					}
+
+					@media only screen and (max-width: 400px) {
+						padding: 5px;
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					&:nth-child(odd) {
+						background-color: #FFF;
+					}
+					&:nth-child(even) {
+						background-color: #F6F6F6;
+					}
+
+					td {
+						padding: 6px 15px;
+						text-align: left;
+						background-color: #FFF;
+
+						&:last-child {
+							text-align: right;
+						}
+
+						@media only screen and (max-width: 400px) {
+							padding: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ovabrw-product-features {
+		justify-content: space-between;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 20px;
+
+		@media only screen and (max-width: 1200px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media only screen and (max-width: 400px) {
+			grid-template-columns: 1fr;
+		}
+
+		.item-feature {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			
+			.icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				min-width: 38px;
+				width: 38px;
+				height: 38px;
+				background-color: #ecf0f4;
+				border-radius: 50%;
+			}
+			.label-and-desc {
+				display: flex;
+				align-items: baseline;
+				flex-direction: column;
+				line-height: 1.3;
+				gap: 5px;
+				@media only screen and (max-width: 400px) {
+					flex-direction: row;
+				}
+			}
+			i {
+				margin: 0;
+				display: inline-flex;
+				color: var(--ovabrw-primary-color);
+				opacity: 1;
+			}
+			label {
+				font-size: 12px;
+				line-height: 1.2;
+				font-weight: 600;
+				color: var(--ovabrw-heading-color);
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.ovabrw-specifications {
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    display: grid;
+		justify-content: space-between;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media only screen and (max-width: 400px) {
+			grid-template-columns: 1fr;
+		}
+
+		.item-specification {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 14px;
+			i {
+				margin: 0;
+				display: inline-flex;
+				font-size: 16px;
+				opacity: 1;
+			}
+			label {
+				color: var(--ovabrw-text-color);
+				line-height: 1.2;
+			}
+			span {
+				color: var(--ovabrw-heading-color);
+				line-height: 1.2;
+				font-weight: 500;
+			}
+		}
+	}
+	.ovabrw-product-form-tabs {
+		.ovabrw-tab-head {
+			align-items: center;
+			column-gap: 15px;
+			row-gap: 6px;
+			margin: 0;
+			padding: 25px;
+			background-color: var(--secondary);
+			border-radius: 10px 10px 0 0;
+
+			.item-tab {
+				position: relative;
+				font-size: 20px;
+				font-weight: 500;
+				color: #FFFFFF;
+				text-transform: capitalize;
+				padding-bottom: 0;
+				border: none !important;
+
+				.title {
+					position: relative;
+					display: inline-block;
+				}
+				&.active {
+					color: #FFFFFF;
+
+					.title {
+						&:after {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							content: "";
+							width: 100%;
+							height: 2px;
+							background-color: #FFFFFF;
+						}
+					}
+				}
+				
+				@media only screen and (max-width: 600px) {
+					font-size: 18px;
+
+					&.modern-booking-tab {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			@media only screen and (max-width: 600px) {
+				flex-direction: row;
+			}
+		}
+	}
+
+	.woocommerce-tabs {
+		ul.tabs {
+			margin-bottom: 40px;
+			li {
+				text-transform: uppercase;
+				background-color: #fff;
+				box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+				&:hover, &.active {
+					background-color: var(--primary);  
+					a {
+						color: var(--heading);
+					}
+				}
+				a {
+					color: var(--heading); 
+				}
+			}
+		}
+		.panel {
+			h3 {
+				margin-bottom: 0.8em;
+			}
+			p {
+			 	line-height: var(--line-height);
+			}
+			ul {
+				li {
+					&::marker {
+						color: var(--primary); 
+					}
+				}
+			}
+		}
+	} 
+
+	#booking_form, #request_booking {
+		padding: 25px;
+		background-color: #ecf0f4;
+		border-radius: 0 0 10px 10px;
+
+		.ovabrw-product-fields {
+			grid-column-gap: 20px;
+			grid-row-gap: 0;
+			padding: 0;
+			.rental_item {
+				&.form-location-field {
+					i {
+						background-color: var(--secondary);
+						&:before {
+							font-family: 'Flaticon' !important; 
+						}
+					}
+				}
+				&.ccf_hidden_label {
+					& > label:first-child {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.ovabrw-extra-services {
+			margin: 0 0 20px 0;
+
+			.ovabrw_resource {
+				.item {
+					.res-left {
+						width: 55%;
+					}
+					.res-right {
+						gap: 5px;
+						width: 45%;
+					}
+
+					@media only screen and (max-width: 768px) {
+						.res-left, .res-right {
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
+
+		.ovabrw-services {
+			.ovabrw-service {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-column-gap: 20px;
+				@media only screen and (max-width: 768px) {
+					grid-template-columns: 1fr;
+				}
+				select {
+					height: auto;
+					border: none!important;
+					background-size: 14px;
+					width: 100%;
+					option {
+						font-weight: inherit;
+					}
+				}
+			} 
+		}
+
+		.ovabrw-modern-deposit {
+			.deposit-label {
+				display: none;
+				margin-bottom: 4px;
+
+				&.active {
+					display: block;
+				}
+			}
+
+			.deposit-type {
+				display: flex;
+
+				.ovabrw-label-field {
+					width: 100%;
+
+					.checkmark {
+						width: 100%;
+						padding: 14px;
+						font-weight: 400;
+						background-color: #fff;
+						box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+						line-height: 1.3;
+					}
+				}
+			}
+		}
+
+		.ajax_show_total {
+			font-size: 15px;
+		}
+
+		button.submit {
+			padding: 15px 30px;
+			color: #fff;
+			font-weight: 700;
+			text-transform: none;
+			border-radius: 10px;
+			margin-top: 10px;
+			&:hover {
+				background-color: var(--secondary);
+			}
+		}
+	}
+
+	.ovabrw-product-calendar {
+		.title {
+			margin-bottom: 17px;
+			text-transform: capitalize;
+		}
+		.wrap_calendar {
+			background-color: #ecf0f4; 
+			.ovabrw__product_calendar {
+				.fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+					font-size: 18px;
+				}
+				.fc-view-harness .fc-view .fc-day .fc-daygrid-day-bg {
+					@media (max-width: 767px) {
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ovabrw-second-heading {
+	font-size: var(--ovabrw-second-heading-size);
+}
+
+.elementor-widget-container {
+	.ovabrw-related-products {
+		.head-related {
+			display: none;
+		}
+	}
+	.ovabrw-modern-product {
+		.woocommerce-tabs {
+			ul.tabs {
+				li {
+					border-color: transparent;
+				}
+			}
+		}
+	} 
+}
+
+.content-product-item {
+	.product-included-content, .product-rental-policy-content {
+		ul,ol {
+			margin: 0;
+			padding: 0 23px;
+			li {
+				line-height: 1.6;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&::marker {
+					color: var(--ovabrw-primary-color);
+				}
+			}
+		}
+		i {
+			margin: 0 4px;
+			position: relative;
+			top: 2px;
+			display: inline-flex;			
+			font-size: 18px;
+			color: #00BB98;
+		}
+		p {
+			margin: 0 0 1em 0;
+		}
+	}
+	.product-rental-policy-content {
+		i {
+			color: var(--ovabrw-primary-color);
+		}
+	}
+}
+
+.elementor-ovabrw-product-share {
+	.content-product-item {
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 6px;
+		line-height: 1;
+	}
+	.btn-share {
+		transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -webkit-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    position: relative;
+	    width: 40px;
+	    height: 35px;
+		display: inline-flex;
+	    align-items: center;
+	    justify-content: center;
+	    gap: 5px;
+
+	    font-size: 14px;
+	    font-weight: 400;
+	    line-height: 1;
+	    height: 35px;
+	    color: var(--text);
+	    margin: 0 4px;
+	    padding: 5px 8px;
+	    background-color: #fff;
+	    border: 1px solid #e6e6e6;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    &:hover {
+			.ova-social {
+				top: 35px;
+				opacity: 1;
+				visibility: visible;
+				transform: rotate(0deg);
+				transition-delay: 0.08s;
+			}
+		}
+
+		i {
+			display: inline-flex;
+			font-size: 17px;
+			color: var(--primary);
+			&.fa-whatsapp {
+				font-size: 19px;
+			}
+		}
+
+		.ova-social {
+			@include transaction( all, 0.3s, ease-in-out );
+			list-style-type: none;
+			padding:0;
+    		margin:0;
+    		position: absolute;
+    		width: 100%;
+    		top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 2;
+
+    		li {
+    			width: 100%;
+
+    			&:first-child {
+					margin-top: 5px;
+				}
+				&:not(:last-child) {
+					margin-bottom: 5px;
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: 400;
+					line-height: 1;
+					width: 40px;
+					height: 35px;
+					color: var(--text);
+					background-color: #fff;
+					border: 1px solid #e6e6e6;
+					border-radius: 4px;
+					cursor: pointer;
+					@include transaction( all, 0.3s, ease );
+
+					&:hover {
+						background-color: var(--primary);
+						border: 1px solid var(--primary);
+						color: #fff;
+
+						i {
+							color: #fff;
+						}
+					}
+				}
+    		}
+		}
+	}
+	.ova-single-product-wishlist {
+		i {
+			color: var(--primary);
+		}
+	}
+}

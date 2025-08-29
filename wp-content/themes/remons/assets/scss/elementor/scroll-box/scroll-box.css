@@ -1,0 +1,42 @@
+.ova-scroll-box {
+  display: flex;
+  column-gap: 70px;
+  overflow-x: auto;
+  border-bottom: 1px solid #D0D7DE;
+  cursor: all-scroll;
+  /* Firefox */
+  scrollbar-color: var(--secondary) transparent;
+  scrollbar-width: thin;
+}
+.ova-scroll-box .item-scroll-box {
+  position: relative;
+  flex: 0 0 230px;
+}
+.ova-scroll-box .item-scroll-box:not(:last-child):before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 46px;
+  background-color: #C9C9C9;
+}
+.ova-scroll-box .item-scroll-box .title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+.ova-scroll-box .item-scroll-box .description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ova-scroll-box::-webkit-scrollbar {
+  height: 5px;
+}
+.ova-scroll-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ova-scroll-box::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
